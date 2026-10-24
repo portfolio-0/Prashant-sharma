@@ -1,0 +1,2394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Required Meta Tags -->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="theme-color" content="#000000">
+   <meta name="description" content="Prashant Sharma — Cinematographer, Senior Video Editor & Visual Storyteller with 15+ years of experience in cinematic filmmaking, podcasts, commercials, and viral social retention editing.">
+   <meta name="keywords" content="Prashant Sharma, Cinematographer, Video Editor, Final Cut Pro, After Effects, Podcast Editor, Color Grading, Short-form Reels, India">
+
+   <!-- Title & Favicon -->
+   <title>Prashant Sharma — Cinematographer &amp; Senior Video Editor</title>
+   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+   <!-- CSS Dependencies from reference assets -->
+   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/vendor/glyyphter/css/xpovio.css">
+   <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.css">
+   <link rel="stylesheet" href="assets/vendor/nice-select/css/nice-select.css">
+   <link rel="stylesheet" href="assets/vendor/magnific-popup/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/vendor/slick/css/slick.css">
+
+   <!-- Main Template CSS from reference assets -->
+   <link rel="stylesheet" href="assets/css/main.min.css">
+
+   <!-- Custom Styling Supplements (Preserving 100% of reference assets colors & theme) -->
+   <style>
+      /* Brand Logo Styling */
+      .brand-logo-text {
+         font-size: 22px;
+         font-weight: 900;
+         letter-spacing: 2px;
+         color: #ffffff;
+         text-transform: uppercase;
+         text-decoration: none;
+         display: inline-flex;
+         align-items: center;
+         gap: 2px;
+      }
+      .brand-logo-text span {
+         color: var(--primary-color);
+      }
+      .brand-logo-text .dot {
+         width: 6px;
+         height: 6px;
+         border-radius: 50%;
+         background: var(--primary-color);
+         display: inline-block;
+         margin-left: 3px;
+         box-shadow: 0 0 10px var(--primary-color);
+      }
+
+      /* Authentic Agency Portrait Frame */
+      .prashant-portrait-wrap {
+         position: relative;
+         width: 100%;
+         max-width: 480px;
+         border-radius: 14px;
+         overflow: hidden;
+         border: 2px solid rgba(255, 116, 37, 0.45);
+         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.85), 0 0 40px rgba(255, 116, 37, 0.18);
+         background: #0d0d0f;
+         transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+      .prashant-portrait-wrap img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+         display: block;
+         transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .prashant-portrait-wrap:hover {
+         transform: translateY(-4px);
+         box-shadow: 0 25px 70px rgba(0, 0, 0, 0.95), 0 0 50px rgba(255, 116, 37, 0.35);
+      }
+      .prashant-portrait-wrap:hover img {
+         transform: scale(1.02);
+      }
+
+      /* Hero Dark Studios Logo (Replacing 494x494 image) */
+      .banner-one-thumb {
+         border-radius: 0 !important;
+         max-width: 470px !important;
+         width: 100% !important;
+         height: auto !important;
+         object-fit: contain !important;
+         filter: drop-shadow(0 0 25px rgba(232, 22, 75, 0.35)) drop-shadow(0 0 50px rgba(255, 116, 37, 0.25));
+         transition: transform 0.4s ease, filter 0.4s ease;
+      }
+      .banner-one-thumb:hover {
+         filter: drop-shadow(0 0 35px rgba(232, 22, 75, 0.6)) drop-shadow(0 0 75px rgba(255, 116, 37, 0.45));
+      }
+      .brand-nav-icon {
+         height: 34px;
+         width: auto;
+         object-fit: contain;
+         filter: drop-shadow(0 0 8px rgba(232, 22, 75, 0.4));
+      }
+
+      /* Testimonial Client Portraits with B/W Luxury Filter & Overlay */
+      .testimonial-s__slider .thumb {
+         width: 100%;
+         max-width: 320px;
+         aspect-ratio: 1 / 1;
+         border-radius: 16px;
+         overflow: hidden;
+         border: 2px solid rgba(255, 116, 37, 0.45);
+         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 116, 37, 0.15);
+         background: radial-gradient(circle at center, #1b1b22 0%, #0c0c0e 100%);
+         position: relative;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         transition: border-color 0.4s ease, box-shadow 0.4s ease;
+      }
+      .testimonial-s__slider .thumb::after {
+         content: '';
+         position: absolute;
+         inset: 0;
+         background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.42) 100%);
+         pointer-events: none;
+         transition: opacity 0.4s ease;
+      }
+      .testimonial-s__slider .thumb img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         object-position: top center;
+         display: block;
+         filter: grayscale(100%) contrast(1.15) brightness(0.94);
+         transition: filter 0.4s ease, transform 0.4s ease;
+      }
+      .testimonial-s__slider-single:hover .thumb img,
+      .testimonial-s__slider .thumb:hover img {
+         filter: grayscale(100%) contrast(1.22) brightness(1.02);
+         transform: scale(1.03);
+      }
+      .testimonial-s__slider-single:hover .thumb,
+      .testimonial-s__slider .thumb:hover {
+         border-color: var(--primary-color);
+         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 40px rgba(255, 116, 37, 0.35);
+      }
+
+      /* Hero Layout - Shortened text strictly ABOVE the logo (Zero Overlap) */
+      .banner {
+         padding: 135px 0 75px !important;
+         min-height: auto;
+         position: relative;
+      }
+      @media (max-width: 767px) {
+         .banner {
+            padding: 105px 0 55px !important;
+         }
+      }
+      .hero-clean-header {
+         position: relative;
+         z-index: 2;
+      }
+      .hero-short-headline {
+         font-size: clamp(28px, 4.5vw, 58px);
+         font-weight: 900;
+         line-height: 1.15;
+         margin-bottom: 0;
+         letter-spacing: -0.5px;
+         text-transform: uppercase;
+         color: #ffffff;
+      }
+      .hero-short-headline .text-stroke {
+         -webkit-text-stroke: 1.5px var(--primary-color);
+         -webkit-text-fill-color: transparent;
+      }
+      .hero-lead-text {
+         color: #a8a8b2;
+         font-size: 15px;
+         line-height: 1.6;
+         max-width: 580px;
+         margin: 12px auto 0;
+      }
+      .hero-logo-container {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 24px 0 26px;
+         position: relative;
+         z-index: 2;
+      }
+      .hero-main-logo {
+         max-width: 275px;
+         width: 100%;
+         height: auto;
+         object-fit: contain;
+         filter: drop-shadow(0 0 25px rgba(232, 22, 75, 0.45)) drop-shadow(0 0 50px rgba(255, 116, 37, 0.3));
+         transition: transform 0.4s ease, filter 0.4s ease;
+      }
+      .hero-main-logo:hover {
+         transform: scale(1.04);
+         filter: drop-shadow(0 0 35px rgba(232, 22, 75, 0.65)) drop-shadow(0 0 70px rgba(255, 116, 37, 0.45));
+      }
+      @media (max-width: 575px) {
+         .hero-main-logo {
+            max-width: 215px;
+         }
+      }
+      .hero-stats-row {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 26px;
+         margin: 22px 0 0;
+         flex-wrap: wrap;
+      }
+      .hero-stat-item h4 {
+         color: var(--primary-color);
+         font-size: 26px;
+         margin-bottom: 2px;
+      }
+      .hero-stat-item p {
+         color: var(--secondary-color);
+         font-size: 11px;
+         letter-spacing: 1.5px;
+         margin-bottom: 0;
+      }
+      .hero-stat-sep {
+         color: rgba(255, 255, 255, 0.15);
+         font-size: 18px;
+         user-select: none;
+      }
+
+      /* Capabilities Section: Completely remove tilted hover image & prevent transform distortion */
+      .offer-thumb-hover {
+         display: none !important;
+         opacity: 0 !important;
+         visibility: hidden !important;
+         pointer-events: none !important;
+      }
+      .offer__cta-single,
+      .offer__cta-single * {
+         transform: none !important;
+      }
+      .offer__cta-single:hover h2 a {
+         color: #ff7425 !important;
+      }
+
+      /* 5-Step Workflow: All 5 Cards Side-by-Side in One Horizontal Row */
+      .workflow-steps-horizontal {
+         display: grid;
+         grid-template-columns: repeat(5, 1fr);
+         gap: 16px;
+         margin-top: 30px;
+      }
+      @media (max-width: 1199px) {
+         .workflow-steps-horizontal {
+            grid-template-columns: repeat(3, 1fr);
+         }
+      }
+      @media (max-width: 767px) {
+         .workflow-steps-horizontal {
+            grid-template-columns: 1fr;
+         }
+      }
+
+      /* Interactive Contact Form Styling */
+      .contact-main__form {
+         background: #111114;
+         border: 1px solid #24242a;
+         border-radius: 8px;
+         padding: 35px 30px;
+         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      }
+      .contact-main__form .group-wrapper {
+         display: flex;
+         gap: 16px;
+         margin-bottom: 16px;
+      }
+      @media (max-width: 767px) {
+         .contact-main__form .group-wrapper {
+            flex-direction: column;
+         }
+      }
+      .contact-main__form .group-input {
+         margin-bottom: 16px;
+         width: 100%;
+      }
+      .contact-main__form .group-input input,
+      .contact-main__form .group-input select,
+      .contact-main__form .group-input textarea {
+         width: 100%;
+         background: #18181c;
+         border: 1px solid #33333d;
+         border-radius: 6px;
+         padding: 14px 18px;
+         color: #ffffff;
+         font-size: 14px;
+         outline: none;
+         transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+      }
+      .contact-main__form .group-input input:focus,
+      .contact-main__form .group-input select:focus,
+      .contact-main__form .group-input textarea:focus {
+         background: #1c1c22;
+         border-color: var(--primary-color);
+         box-shadow: 0 0 16px rgba(255, 116, 37, 0.22);
+      }
+      .contact-main__form .group-input textarea {
+         min-height: 90px;
+         resize: vertical;
+      }
+      .contact-main__form .form-label {
+         display: block;
+         font-size: 12px;
+         font-weight: 600;
+         letter-spacing: 0.6px;
+         text-transform: uppercase;
+         color: #c4c4ce;
+         margin-bottom: 8px;
+      }
+      .contact-main__form .form-label .req {
+         color: var(--primary-color);
+         margin-left: 2px;
+         font-weight: bold;
+      }
+      .contact-success-state {
+         background: #14171d;
+         border: 1.5px solid var(--primary-color);
+         border-radius: 8px;
+         padding: 40px 24px;
+         text-align: center;
+         animation: formSuccessFade 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 116, 37, 0.2);
+      }
+      @keyframes formSuccessFade {
+         from { opacity: 0; transform: translateY(14px) scale(0.98); }
+         to { opacity: 1; transform: translateY(0) scale(1); }
+      }
+      .contact-success-state .success-icon {
+         font-size: 46px;
+         color: #10b981;
+         margin-bottom: 14px;
+         filter: drop-shadow(0 0 16px rgba(16, 185, 129, 0.45));
+      }
+      .contact-success-state h4 {
+         color: #ffffff;
+         font-size: 22px;
+         font-weight: 700;
+         margin-bottom: 10px;
+      }
+      .contact-success-state p {
+         color: #c4c4cc;
+         font-size: 14px;
+         line-height: 1.6;
+         max-width: 440px;
+         margin: 0 auto 20px;
+      }
+      .contact-card-info {
+         background: #111114;
+         border: 1px solid #24242a;
+         border-radius: 8px;
+         padding: 24px;
+         height: 100%;
+         transition: border-color 0.3s ease, transform 0.3s ease;
+      }
+      .contact-card-info:hover {
+         border-color: var(--primary-color);
+         transform: translateY(-4px);
+      }
+      .contact-card-info .icon-box {
+         width: 48px;
+         height: 48px;
+         border-radius: 50%;
+         background: rgba(255, 116, 37, 0.12);
+         color: var(--primary-color);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 20px;
+         margin-bottom: 16px;
+      }
+
+      /* Portfolio Filter Navigation */
+      .portfolio-filter-nav {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 12px;
+         justify-content: center;
+         margin-bottom: 45px;
+      }
+      .filter-btn-item {
+         background: #141414;
+         color: #a0a0a0;
+         border: 1px solid #333333;
+         padding: 10px 22px;
+         font-size: 12px;
+         font-weight: 700;
+         letter-spacing: 1.5px;
+         text-transform: uppercase;
+         cursor: pointer;
+         transition: all 0.3s ease;
+         border-radius: 2px;
+      }
+      .filter-btn-item:hover,
+      .filter-btn-item.active {
+         background: var(--primary-color);
+         color: #000000;
+         border-color: var(--primary-color);
+         font-weight: 800;
+      }
+
+      /* Project Card Thumbnail & Play Overlay */
+      .portfolio-card-custom {
+         background: #101010;
+         border: 1px solid #222222;
+         border-radius: 4px;
+         overflow: hidden;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         transition: all 0.35s ease;
+      }
+      .portfolio-card-custom:hover {
+         border-color: var(--primary-color);
+         transform: translateY(-6px);
+         box-shadow: 0 15px 40px rgba(255, 116, 37, 0.15);
+      }
+      .project-thumb-box {
+         position: relative;
+         aspect-ratio: 16/9;
+         overflow: hidden;
+         background: #000;
+      }
+      .project-thumb-box.vertical-short {
+         aspect-ratio: 9/16;
+         max-height: 480px;
+      }
+      .project-thumb-box img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         transition: transform 0.6s ease;
+      }
+      .portfolio-card-custom:hover .project-thumb-box img {
+         transform: scale(1.05);
+      }
+      .project-play-icon-overlay {
+         position: absolute;
+         inset: 0;
+         background: rgba(0, 0, 0, 0.45);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         transition: all 0.3s ease;
+      }
+      .play-icon-circle {
+         width: 60px;
+         height: 60px;
+         border-radius: 50%;
+         background: rgba(14, 14, 14, 0.85);
+         border: 2px solid var(--primary-color);
+         color: var(--primary-color);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 18px;
+         transition: all 0.3s ease;
+      }
+      .portfolio-card-custom:hover .play-icon-circle {
+         background: var(--primary-color);
+         color: #000;
+         transform: scale(1.15);
+      }
+      .project-badge-pill {
+         position: absolute;
+         top: 15px;
+         left: 15px;
+         background: rgba(0, 0, 0, 0.85);
+         border: 1px solid var(--primary-color);
+         color: var(--primary-color);
+         font-size: 10px;
+         font-weight: 800;
+         text-transform: uppercase;
+         letter-spacing: 1.5px;
+         padding: 4px 10px;
+         border-radius: 2px;
+      }
+      .project-content-box {
+         padding: 24px;
+         display: flex;
+         flex-direction: column;
+         flex-grow: 1;
+      }
+      .project-channel-tag {
+         font-size: 11px;
+         font-weight: 800;
+         color: var(--primary-color);
+         letter-spacing: 2px;
+         text-transform: uppercase;
+         margin-bottom: 8px;
+         display: flex;
+         align-items: center;
+         gap: 8px;
+      }
+      .project-title-h4 {
+         font-size: 19px;
+         font-weight: 700;
+         line-height: 1.35;
+         margin-bottom: 12px;
+         color: #ffffff;
+      }
+      .project-title-h4 a {
+         color: #ffffff;
+         text-decoration: none;
+         transition: color 0.2s;
+      }
+      .project-title-h4 a:hover {
+         color: var(--primary-color);
+      }
+      .project-desc-p {
+         font-size: 13px;
+         line-height: 1.7;
+         color: #8a8a8a;
+         margin-bottom: 18px;
+         flex-grow: 1;
+      }
+      .project-role-bar {
+         border-top: 1px solid #222;
+         padding-top: 14px;
+         font-size: 11px;
+         color: #777;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+      .project-role-bar strong {
+         color: #ddd;
+      }
+
+      /* Software Badges in Offer section */
+      .software-badge-pill {
+         display: inline-flex;
+         align-items: center;
+         gap: 10px;
+         background: #141414;
+         border: 1px solid #2a2a2a;
+         padding: 12px 18px;
+         border-radius: 4px;
+         font-size: 13px;
+         font-weight: 700;
+         color: #ffffff;
+         margin-bottom: 12px;
+         margin-right: 10px;
+         transition: all 0.3s ease;
+      }
+      .software-badge-pill i {
+         color: var(--primary-color);
+         font-size: 16px;
+      }
+      .software-badge-pill:hover {
+         border-color: var(--primary-color);
+         background: #1c1c1c;
+      }
+
+      /* 20-Point Technical Mastery Grid */
+      .mastery-pillar-card {
+         background: #101010;
+         border: 1px solid #222222;
+         padding: 30px 24px;
+         border-radius: 4px;
+         height: 100%;
+         transition: all 0.3s ease;
+      }
+      .mastery-pillar-card:hover {
+         border-color: var(--primary-color);
+         transform: translateY(-4px);
+      }
+      .mastery-pillar-card .pillar-num {
+         font-size: 11px;
+         font-weight: 800;
+         color: var(--primary-color);
+         letter-spacing: 2px;
+         text-transform: uppercase;
+         margin-bottom: 10px;
+         display: block;
+      }
+      .mastery-pillar-card h3 {
+         font-size: 20px;
+         color: #ffffff;
+         margin-bottom: 18px;
+      }
+      .mastery-list-ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+      }
+      .mastery-list-ul li {
+         font-size: 13px;
+         line-height: 1.6;
+         color: #888888;
+         padding: 8px 0;
+         border-bottom: 1px solid #1a1a1a;
+         display: flex;
+         align-items: flex-start;
+         gap: 10px;
+      }
+      .mastery-list-ul li:last-child {
+         border-bottom: none;
+      }
+      .mastery-list-ul li i {
+         color: var(--primary-color);
+         font-size: 11px;
+         margin-top: 4px;
+      }
+      .mastery-list-ul li strong {
+         color: #e0e0e0;
+      }
+
+      /* Production Gear Policy Note */
+      .gear-policy-box {
+         background: #101010;
+         border-left: 3px solid var(--primary-color);
+         padding: 20px 24px;
+         border-radius: 0 4px 4px 0;
+         margin-top: 30px;
+         font-size: 13px;
+         line-height: 1.7;
+         color: #888888;
+         border-top: 1px solid #222;
+         border-right: 1px solid #222;
+         border-bottom: 1px solid #222;
+      }
+      .gear-policy-box strong {
+         color: #ffffff;
+      }
+
+      /* 5-Step Workflow Cards */
+      .workflow-step-card {
+         background: #111111;
+         border: 1px solid #242424;
+         padding: 28px 24px;
+         height: 100%;
+         border-radius: 4px;
+         transition: all 0.3s ease;
+      }
+      .workflow-step-card:hover {
+         border-color: var(--primary-color);
+         transform: translateY(-4px);
+      }
+      .workflow-step-num {
+         font-size: 36px;
+         font-weight: 900;
+         color: rgba(255, 116, 37, 0.4);
+         line-height: 1;
+         margin-bottom: 14px;
+      }
+      .workflow-step-card h4 {
+         color: #ffffff;
+         font-size: 18px;
+         margin-bottom: 10px;
+      }
+      .workflow-step-card p {
+         color: #888888;
+         font-size: 13px;
+         line-height: 1.7;
+         margin: 0;
+      }
+
+      /* Sponsor Logos Marquee Card */
+      .brand-logo-slide-item {
+         display: inline-flex !important;
+         align-items: center;
+         justify-content: center;
+         height: 80px;
+         padding: 10px 24px;
+         margin: 0 10px;
+         background: #101010;
+         border: 1px solid #222;
+         border-radius: 4px;
+         transition: all 0.3s ease;
+      }
+      .brand-logo-slide-item:hover {
+         border-color: var(--primary-color);
+      }
+      .brand-logo-slide-item img {
+         max-height: 44px;
+         width: auto;
+         opacity: 0.9;
+         transition: opacity 0.3s;
+      }
+      .brand-logo-slide-item:hover img {
+         opacity: 1;
+      }
+
+      /* Standalone Video Modal Lightbox - Transparent Backdrop with Pop-up Animation */
+      .custom-video-modal-wrap {
+         display: flex;
+         position: fixed;
+         inset: 0;
+         z-index: 99999;
+         background: rgba(0, 0, 0, 0.28);
+         backdrop-filter: blur(2px);
+         -webkit-backdrop-filter: blur(2px);
+         align-items: center;
+         justify-content: center;
+         padding: 20px;
+         opacity: 0;
+         visibility: hidden;
+         transition: opacity 0.3s ease, visibility 0.3s ease;
+         cursor: pointer;
+      }
+      .custom-video-modal-wrap.is-active {
+         opacity: 1;
+         visibility: visible;
+      }
+      .custom-video-modal-container {
+         position: relative;
+         width: min(94vw, 960px);
+         max-height: 90vh;
+         background: #0d0e12;
+         border: 1.5px solid rgba(255, 116, 37, 0.65);
+         border-radius: 16px;
+         overflow: hidden;
+         box-shadow: 0 25px 80px rgba(0, 0, 0, 0.75), 0 0 50px rgba(255, 116, 37, 0.32), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+         transform: scale(0.65) translateY(30px);
+         opacity: 0;
+         transition: transform 0.38s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+         cursor: default;
+         display: flex;
+         flex-direction: column;
+      }
+      .custom-video-modal-container.is-vertical {
+         width: min(90vw, 420px);
+      }
+      .custom-video-modal-wrap.is-active .custom-video-modal-container {
+         transform: scale(1) translateY(0);
+         opacity: 1;
+      }
+      .custom-video-modal-bar {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 10px 18px;
+         background: linear-gradient(180deg, #181920 0%, #101116 100%);
+         border-bottom: 1px solid rgba(255, 116, 37, 0.25);
+      }
+      .modal-title-wrap {
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         overflow: hidden;
+         padding-right: 12px;
+      }
+      .modal-pulse-dot {
+         width: 9px;
+         height: 9px;
+         border-radius: 50%;
+         background: #ff7425;
+         box-shadow: 0 0 10px #ff7425;
+         flex-shrink: 0;
+         animation: pulseModalDot 1.8s infinite;
+      }
+      @keyframes pulseModalDot {
+         0%, 100% { opacity: 1; transform: scale(1); }
+         50% { opacity: 0.4; transform: scale(0.75); }
+      }
+      .modal-title-text {
+         color: #ffffff;
+         font-size: 13px;
+         font-weight: 600;
+         letter-spacing: 0.5px;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+      }
+      .custom-video-modal-close-btn {
+         display: inline-flex;
+         align-items: center;
+         gap: 8px;
+         padding: 6px 14px;
+         border-radius: 999px;
+         background: rgba(255, 255, 255, 0.08);
+         border: 1px solid rgba(255, 255, 255, 0.2);
+         color: #ffffff;
+         font-size: 12px;
+         font-weight: 700;
+         letter-spacing: 0.5px;
+         text-transform: uppercase;
+         cursor: pointer;
+         transition: all 0.25s ease;
+         flex-shrink: 0;
+      }
+      .custom-video-modal-close-btn:hover {
+         background: #ff7425;
+         color: #000000;
+         border-color: #ff7425;
+         box-shadow: 0 0 15px rgba(255, 116, 37, 0.6);
+         transform: scale(1.05);
+      }
+      .modal-bar-actions {
+         display: inline-flex;
+         align-items: center;
+         gap: 10px;
+         flex-shrink: 0;
+      }
+      .custom-video-modal-ext-btn {
+         display: inline-flex;
+         align-items: center;
+         gap: 6px;
+         padding: 6px 14px;
+         border-radius: 999px;
+         background: rgba(255, 116, 37, 0.12);
+         border: 1px solid rgba(255, 116, 37, 0.4);
+         color: #ff9d63;
+         font-size: 11px;
+         font-weight: 700;
+         letter-spacing: 0.5px;
+         text-transform: uppercase;
+         text-decoration: none !important;
+         cursor: pointer;
+         transition: all 0.25s ease;
+      }
+      .custom-video-modal-ext-btn:hover {
+         background: #ff7425;
+         color: #000000;
+         border-color: #ff7425;
+         box-shadow: 0 0 12px rgba(255, 116, 37, 0.5);
+         transform: translateY(-1px);
+      }
+      .custom-video-modal-frame-wrap {
+         position: relative;
+         width: 100%;
+         aspect-ratio: 16/9;
+         background: #000000;
+      }
+      .custom-video-modal-container.is-vertical .custom-video-modal-frame-wrap {
+         aspect-ratio: 9/16;
+         max-height: calc(85vh - 50px);
+      }
+      .custom-video-modal-frame-wrap iframe {
+         width: 100%;
+         height: 100%;
+         border: none;
+         display: block;
+      }
+
+      /* Fallback for any Magnific Popup overlay */
+      .mfp-bg {
+         background: rgba(0, 0, 0, 0.42) !important;
+         backdrop-filter: blur(4px) !important;
+         -webkit-backdrop-filter: blur(4px) !important;
+         opacity: 1 !important;
+      }
+   </style>
+</head>
+
+<body>
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+   <![endif]-->
+
+   <div class="my-app">
+      <!-- ==== preloader start ==== -->
+      <div id="preloader">
+         <div id="loader"></div>
+      </div>
+      <!-- ==== / preloader end ==== -->
+
+      <!-- ==== mouse cursor drag start ==== -->
+      <div class="mouseCursor cursor-outer"></div>
+      <div class="mouseCursor cursor-inner">
+         <span>Play</span>
+      </div>
+      <!-- ==== / mouse cursor drag end ==== -->
+
+      <!-- ==== header start ==== -->
+      <header class="header">
+         <div class="primary-navbar secondary--navbar">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-8 col-xl-4">
+                     <nav class="navbar p-0">
+                        <div class="navbar__logo">
+                           <a href="index.html" class="brand-logo-text d-inline-flex align-items-center" aria-label="Prashant Sharma home">
+                              <img src="assets/images/banner/dark_studios_dark_theme_circle_safe.png" alt="Dark Studios Logo" class="brand-nav-icon me-2">
+                              <span>PRASHANT <span>SHARMA</span><span class="dot"></span></span>
+                           </a>
+                        </div>
+                     </nav>
+                  </div>
+                  <div class="col-4 col-xl-8 d-flex justify-content-end align-items-center">
+                     <div class="d-none d-xl-flex align-items-center gap-4 me-4">
+                        <a href="#about" class="text-white text-uppercase fs-6 fw-bold text-decoration-none">About</a>
+                        <a href="#work" class="text-white text-uppercase fs-6 fw-bold text-decoration-none">Selected Work</a>
+                        <a href="#services" class="text-white text-uppercase fs-6 fw-bold text-decoration-none">Mastery</a>
+                        <a href="#workflow" class="text-white text-uppercase fs-6 fw-bold text-decoration-none">Workflow</a>
+                        <a href="#contact" class="text-white text-uppercase fs-6 fw-bold text-decoration-none">Contact</a>
+                     </div>
+                     <div class="navbar__options">
+                        <a href="#contact" class="btn btn--secondary d-none d-sm-inline-flex">Let's Talk</a>
+                        <button class="open-offcanvas-nav d-flex ms-3" aria-label="toggle mobile menu" title="open offcanvas menu"></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- ==== / header end ==== -->
+
+      <!-- ==== offcanvas nav start ==== -->
+      <div class="offcanvas-nav">
+         <div class="offcanvas-menu">
+            <nav class="offcanvas-menu__wrapper">
+               <div class="offcanvas-menu__header nav-fade">
+                  <div class="logo">
+                     <a href="index.html" class="brand-logo-text d-inline-flex align-items-center">
+                        <img src="assets/images/banner/dark_studios_dark_theme_circle_safe.png" alt="Dark Studios Logo" class="brand-nav-icon me-2">
+                        <span>PRASHANT <span>SHARMA</span><span class="dot"></span></span>
+                     </a>
+                  </div>
+                  <a href="javascript:void(0)" aria-label="close offcanvas menu" class="close-offcanvas-menu">
+                     <i class="fa-light fa-xmark-large"></i>
+                  </a>
+               </div>
+               <div class="offcanvas-menu__list my-4">
+                  <div class="navbar__menu">
+                     <ul class="list-unstyled p-0 m-0">
+                        <li class="navbar__item nav-fade py-2"><a href="#about" class="close-offcanvas-menu">About Prashant</a></li>
+                        <li class="navbar__item nav-fade py-2"><a href="#work" class="close-offcanvas-menu">Selected Work</a></li>
+                        <li class="navbar__item nav-fade py-2"><a href="#services" class="close-offcanvas-menu">Technical Mastery</a></li>
+                        <li class="navbar__item nav-fade py-2"><a href="#brands" class="close-offcanvas-menu">Client Brands</a></li>
+                        <li class="navbar__item nav-fade py-2"><a href="#workflow" class="close-offcanvas-menu">5-Step Workflow</a></li>
+                        <li class="navbar__item nav-fade py-2"><a href="#contact" class="close-offcanvas-menu">Contact</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="offcanvas-menu__options nav-fade">
+                  <div class="offcanvas__mobile-options d-flex">
+                     <a href="#contact" class="btn btn--secondary close-offcanvas-menu">Let's Talk</a>
+                  </div>
+               </div>
+               <div class="offcanvas-menu__social social nav-fade">
+                  <a href="https://www.youtube.com/@HappinessMovementOfficial" target="_blank" aria-label="YouTube">
+                     <i class="fa-brands fa-youtube"></i>
+                  </a>
+                  <a href="https://vimeo.com" target="_blank" aria-label="Vimeo">
+                     <i class="fa-brands fa-vimeo-v"></i>
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                     <i class="fa-brands fa-instagram"></i>
+                  </a>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!-- ==== / offcanvas nav end ==== -->
+
+      <div id="smooth-wrapper">
+         <div id="smooth-content">
+            <!-- ==== main start ==== -->
+            <main>
+               <!-- ==== banner start (Exact markup and classes from reference assets index.html) ==== -->
+               <section class="banner" id="home">
+                  <div class="container">
+                     <div class="row justify-content-center">
+                        <div class="col-12 col-xl-10 text-center">
+                           <!-- 1. SHORTENED TEXT STRICTLY ABOVE LOGO -->
+                           <div class="hero-clean-header text-center">
+                              <span class="sub-title text-uppercase fw-6 text-primary mb-2 d-inline-block">
+                                 <i class="fa-solid fa-clapperboard me-2"></i> Cinematographer &amp; Senior Video Editor
+                              </span>
+                              <h1 class="hero-short-headline">
+                                 Every Frame <span class="text-stroke">Has A Feeling.</span>
+                              </h1>
+                              <p class="hero-lead-text">
+                                 15+ years crafting emotion, cinematic pacing &amp; narrative retention for films, multicam podcasts, and high-impact campaigns.
+                              </p>
+                           </div>
+
+                           <!-- 2. BRAND LOGO DISPLAYED CLEANLY BELOW TEXT (ZERO OVERLAP) -->
+                           <div class="hero-logo-container">
+                              <img src="assets/images/banner/dark_studios_dark_theme_fitted.png" 
+                                   alt="Dark Studios - Prashant Sharma" 
+                                   class="hero-main-logo">
+                           </div>
+
+                           <!-- 3. ACTION CTAS & STATS BELOW LOGO -->
+                           <div class="hero-cta-stats text-center">
+                              <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                 <a href="#work" class="btn btn--primary">
+                                    Selected Work <i class="fa-solid fa-arrow-down-right ms-2"></i>
+                                 </a>
+                                 <a href="#contact" class="btn btn--secondary">
+                                    Let's Talk
+                                 </a>
+                              </div>
+                              <div class="hero-stats-row">
+                                 <div class="hero-stat-item">
+                                    <h4 class="fw-7">15+</h4>
+                                    <p class="text-uppercase fw-5">Years Experience</p>
+                                 </div>
+                                 <div class="hero-stat-sep d-none d-sm-block">/</div>
+                                 <div class="hero-stat-item">
+                                    <h4 class="fw-7">500+</h4>
+                                    <p class="text-uppercase fw-5">Projects Completed</p>
+                                 </div>
+                                 <div class="hero-stat-sep d-none d-sm-block">/</div>
+                                 <div class="hero-stat-item">
+                                    <h4 class="fw-7">50M+</h4>
+                                    <p class="text-uppercase fw-5">Audience Views</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <img src="assets/images/star.png" alt="Image" class="star">
+                  <div class="banner-left-text banner-social-text d-none d-md-flex">
+                     <a href="mailto:contact@prashantsharma.com">mail : contact@prashantsharma.com</a>
+                     <a href="#contact">Focus : Film &amp; Post-Production</a>
+                  </div>
+                  <div class="banner-right-text banner-social-text d-none d-md-flex">
+                     <a href="https://www.youtube.com/@HappinessMovementOfficial" target="_blank">YouTube</a>
+                     <a href="https://vimeo.com" target="_blank">Vimeo</a>
+                     <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                  </div>
+                  <!-- Video Frame Button: Opens Know Thyself Retreat Signature Film -->
+                  <a class="video-frame open-custom-video-btn" href="https://www.youtube.com/watch?v=TEWISIWAQYs" data-embed-url="https://www.youtube.com/embed/TEWISIWAQYs?autoplay=1" aria-label="Play Signature Showreel">
+                     <img src="assets/images/video-frame.png" alt="Play Video Frame">
+                     <i class="fa-sharp fa-solid fa-play"></i>
+                  </a>
+                  <div class="lines d-none d-lg-flex">
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                  </div>
+               </section>
+               <!-- ==== / banner end ==== -->
+
+               <!-- ==== agency / about start (Exact markup from reference assets index.html) ==== -->
+               <section class="section agency" id="about">
+                  <div class="container">
+                     <div class="row gaper align-items-center">
+                        <div class="col-12 col-lg-6">
+                           <!-- Authentic Portrait Photo of Prashant Sharma -->
+                           <div class="prashant-portrait-wrap mx-auto">
+                              <img src="assets/images/prashant_portrait.jpg" alt="Prashant Sharma — Cinematographer &amp; Senior Video Editor">
+                           </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                           <div class="agency__content section__content">
+                              <span class="sub-title">
+                                 WELCOME
+                                 <i class="fa-solid fa-arrow-right"></i>
+                              </span>
+                              <h2 class="title title-anim">
+                                 Craft refined by 15 years of visual storytelling
+                              </h2>
+                              <div class="paragraph">
+                                 <p>For over 15 years, I've been drawn to the power of moving images — how a camera can notice what words miss, and how the right cut can turn ordinary footage into a story people remember.</p>
+                                 <p>My work combines the perspective of a cinematographer with the surgical precision of an editor. I care about what happens before the shutter clicks and after the last frame is cut: the people, the rhythm, the sound, and the feeling that stays.</p>
+                              </div>
+                              <div class="skill-wrap">
+                                 <div class="skill-bar-single">
+                                    <div class="skill-bar-title">
+                                       <p class="primary-text">Senior Video Editing &amp; Narrative Pacing</p>
+                                    </div>
+                                    <div class="skill-bar-wrapper" data-percent="98%">
+                                       <div class="skill-bar">
+                                          <div class="skill-bar-percent">
+                                             <span class="percent-value"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="skill-bar-single">
+                                    <div class="skill-bar-title">
+                                       <p class="primary-text">Cinematography &amp; Visual Direction</p>
+                                    </div>
+                                    <div class="skill-bar-wrapper" data-percent="95%">
+                                       <div class="skill-bar">
+                                          <div class="skill-bar-percent">
+                                             <span class="percent-value"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="skill-bar-single">
+                                    <div class="skill-bar-title">
+                                       <p class="primary-text">Audio Mixing, Voice Cleanup &amp; Color Grading</p>
+                                    </div>
+                                    <div class="skill-bar-wrapper" data-percent="92%">
+                                       <div class="skill-bar">
+                                          <div class="skill-bar-percent">
+                                             <span class="percent-value"></span>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <!-- Gear and Production Setup Note -->
+                              <div class="gear-policy-box">
+                                 <p class="m-0">
+                                    <i class="fa-solid fa-circle-info text-primary me-2"></i>
+                                    <strong>Production &amp; Post-Production Setup:</strong> Post-production is mastered in Prashant's specialized studio. For on-location cinematography shoots, camera gear is provided by the client/production per project specifications.
+                                 </p>
+                              </div>
+
+                              <div class="section__content-cta mt-4">
+                                 <a href="#work" class="btn btn--primary">Explore Selected Work</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <img src="assets/images/star.png" alt="Image" class="star">
+                  <img src="assets/images/agency/dot-large.png" alt="Image" class="dot-large">
+               </section>
+               <!-- ==== / agency end ==== -->
+
+               <!-- ==== portfolio start (Filterable Work Grid using template portfolio architecture) ==== -->
+               <section class="section portfolio pb-0 fade-wrapper position-relative" id="work">
+                  <!-- Text Slider Marquee -->
+                  <div class="portfolio__text-slider">
+                     <div class="portfolio__text-slider-single">
+                        <h2 class="h1">
+                           <a href="#work">
+                              selected work
+                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
+                           </a>
+                        </h2>
+                     </div>
+                     <div class="portfolio__text-slider-single">
+                        <h2 class="h1">
+                           <a href="#work">
+                              selected work
+                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
+                           </a>
+                        </h2>
+                     </div>
+                     <div class="portfolio__text-slider-single">
+                        <h2 class="h1">
+                           <a href="#work">
+                              selected work
+                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
+                           </a>
+                        </h2>
+                     </div>
+                     <div class="portfolio__text-slider-single">
+                        <h2 class="h1">
+                           <a href="#work">
+                              selected work
+                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
+                           </a>
+                        </h2>
+                     </div>
+                  </div>
+
+                  <div class="container my-4">
+                     <!-- Category Filter Buttons -->
+                     <div class="portfolio-filter-nav">
+                        <button class="filter-btn-item active" data-filter="all">All Projects</button>
+                        <button class="filter-btn-item" data-filter="cinematography">Cinematography &amp; Retreats</button>
+                        <button class="filter-btn-item" data-filter="podcast">Podcasts &amp; Interviews</button>
+                        <button class="filter-btn-item" data-filter="reels">Viral Reels &amp; Shorts</button>
+                        <button class="filter-btn-item" data-filter="commercial">Commercial &amp; Health</button>
+                     </div>
+
+                     <!-- Projects Grid -->
+                     <div class="row gaper" id="portfolioProjectsWrap">
+
+                        <!-- 1. Retreat Documentary Coverage -->
+                        <div class="col-12 col-lg-6 project-grid-item" data-category="cinematography">
+                           <div class="portfolio-card-custom topy-tilt fade-top">
+                              <div class="project-thumb-box">
+                                 <span class="project-badge-pill">Documentary Film</span>
+                                 <img src="assets/images/custom_thumbnails/retreat_may2026.jpg" alt="Know Thyself Mussoorie Retreat">
+                                 <div class="project-play-icon-overlay">
+                                    <a href="https://www.youtube.com/watch?v=TEWISIWAQYs" class="play-icon-circle open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/TEWISIWAQYs?autoplay=1" aria-label="Play Know Thyself Film">
+                                       <i class="fa-solid fa-play"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="project-content-box">
+                                 <div class="project-channel-tag">
+                                    <i class="fa-solid fa-crown"></i> Happiness Movement
+                                 </div>
+                                 <h3 class="project-title-h4">
+                                    <a href="https://www.youtube.com/watch?v=TEWISIWAQYs" class="open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/TEWISIWAQYs?autoplay=1">
+                                       Know Thyself — Six-Day Retreat Film
+                                    </a>
+                                 </h3>
+                                 <p class="project-desc-p">
+                                    Production and lead editing for the Mussoorie retreat. Capturing breakthrough participant moments, wide establishing mountain shots, candid behind-the-scenes, and music-driven emotional pacing.
+                                 </p>
+                                 <div class="project-role-bar">
+                                    <span>Role: <strong>Cinematography &amp; Lead Editor</strong></span>
+                                    <span class="text-white fw-bold">4K Cinema</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- 2. ANURAG RISHI - 10X Better Life Podcast -->
+                        <div class="col-12 col-lg-6 project-grid-item" data-category="podcast">
+                           <div class="portfolio-card-custom topy-tilt fade-top">
+                              <div class="project-thumb-box">
+                                 <span class="project-badge-pill">Multi-Cam Podcast</span>
+                                 <img src="assets/images/custom_thumbnails/podcast_anurag_10x.jpg" alt="10X Better Life Anurag Rishi">
+                                 <div class="project-play-icon-overlay">
+                                    <a href="https://www.youtube.com/watch?v=xb1dYwhMg9o" class="play-icon-circle open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/xb1dYwhMg9o?autoplay=1" aria-label="Play Anurag Rishi Podcast">
+                                       <i class="fa-solid fa-play"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="project-content-box">
+                                 <div class="project-channel-tag">
+                                    <i class="fa-solid fa-circle-check"></i> ANURAG RISHI
+                                 </div>
+                                 <h3 class="project-title-h4">
+                                    <a href="https://www.youtube.com/watch?v=xb1dYwhMg9o" class="open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/xb1dYwhMg9o?autoplay=1">
+                                       10X Better Life, From Disease to Healing &amp; Law of Attraction
+                                    </a>
+                                 </h3>
+                                 <p class="project-desc-p">
+                                    Transformational conversation edit featuring multi-camera dialogue rhythm, acoustic voice cleanup, retention resets, and balanced skin tone color science.
+                                 </p>
+                                 <div class="project-role-bar">
+                                    <span>Role: <strong>Multicam &amp; Dialogue Editor</strong></span>
+                                    <span class="text-white fw-bold">YouTube Long-Form</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- 3. Sumit Dubey Podcast -->
+                        <div class="col-12 col-lg-6 project-grid-item" data-category="podcast">
+                           <div class="portfolio-card-custom topy-tilt fade-top">
+                              <div class="project-thumb-box">
+                                 <span class="project-badge-pill">Business &amp; Coaching</span>
+                                 <img src="assets/images/custom_thumbnails/podcast_sumit_dubey.jpg" alt="Online Coaching Sumit Dubey">
+                                 <div class="project-play-icon-overlay">
+                                    <a href="https://www.youtube.com/watch?v=261P3-ak-wg" class="play-icon-circle open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/261P3-ak-wg?autoplay=1" aria-label="Play Sumit Dubey Podcast">
+                                       <i class="fa-solid fa-play"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="project-content-box">
+                                 <div class="project-channel-tag">
+                                    <i class="fa-solid fa-microphone"></i> Sumit Dubey Podcast
+                                 </div>
+                                 <h3 class="project-title-h4">
+                                    <a href="https://www.youtube.com/watch?v=261P3-ak-wg" class="open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/261P3-ak-wg?autoplay=1">
+                                       What Most Experts Don't Want You to Know About ONLINE COACHING in 2026
+                                    </a>
+                                 </h3>
+                                 <p class="project-desc-p">
+                                    High-energy masterclass conversation edit designed for high viewer retention, rapid speaker switching, and dynamic graphic overlays.
+                                 </p>
+                                 <div class="project-role-bar">
+                                    <span>Role: <strong>Senior Video Editor</strong></span>
+                                    <span class="text-white fw-bold">Podcast Cut</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- 4. Dr. Shikha Sharma Rishi ft. Swami Shailendra -->
+                        <div class="col-12 col-lg-6 project-grid-item" data-category="podcast">
+                           <div class="portfolio-card-custom topy-tilt fade-top">
+                              <div class="project-thumb-box">
+                                 <span class="project-badge-pill">Health &amp; Spirituality</span>
+                                 <img src="assets/images/custom_thumbnails/podcast_shikha_osho.jpg" alt="Dr. Shikha Podcast OSHO Life Advice">
+                                 <div class="project-play-icon-overlay">
+                                    <a href="https://www.youtube.com/watch?v=wIALV6PKwXM" class="play-icon-circle open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/wIALV6PKwXM?autoplay=1" aria-label="Play Dr. Shikha Podcast">
+                                       <i class="fa-solid fa-play"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="project-content-box">
+                                 <div class="project-channel-tag">
+                                    <i class="fa-solid fa-om"></i> Dr. Shikha Sharma Rishi
+                                 </div>
+                                 <h3 class="project-title-h4">
+                                    <a href="https://www.youtube.com/watch?v=wIALV6PKwXM" class="open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/wIALV6PKwXM?autoplay=1">
+                                       OSHO's Life Advice &amp; Meditation Techniques ft. Swami Shailendra
+                                    </a>
+                                 </h3>
+                                 <p class="project-desc-p">
+                                    Contemplative, high-clarity conversation cut with Swami Shailendra Saraswati. Pristine audio restoration, thoughtful B-roll cuts, and calm pacing.
+                                 </p>
+                                 <div class="project-role-bar">
+                                    <span>Role: <strong>Lead Podcast Editor &amp; Colorist</strong></span>
+                                    <span class="text-white fw-bold">Spiritual Dialogue</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- 5. ANURAG RISHI - Ayurveda Superfood -->
+                        <div class="col-12 col-lg-4 project-grid-item" data-category="commercial">
+                           <div class="portfolio-card-custom topy-tilt fade-top">
+                              <div class="project-thumb-box">
+                                 <span class="project-badge-pill">Commercial Explainer</span>
+                                 <img src="assets/images/custom_thumbnails/anurag_ayurveda_superfood.jpg" alt="Ayurveda Superfood Barley Benefits">
+                                 <div class="project-play-icon-overlay">
+                                    <a href="https://www.youtube.com/watch?v=cec8ViZj1iw" class="play-icon-circle open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/cec8ViZj1iw?autoplay=1" aria-label="Play Barley Superfood Video">
+                                       <i class="fa-solid fa-play"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="project-content-box">
+                                 <div class="project-channel-tag">
+                                    <i class="fa-solid fa-seedling"></i> ANURAG RISHI
+                                 </div>
+                                 <h3 class="project-title-h4">
+                                    <a href="https://www.youtube.com/watch?v=cec8ViZj1iw" class="open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/cec8ViZj1iw?autoplay=1">
+                                       Ayurveda Ka Superfood — Magical Benefits of Barley
+                                    </a>
+                                 </h3>
+                                 <p class="project-desc-p">
+                                    Direct-response health storytelling. Problem-solution editing structure, callouts, and clean sound-designed transitions that hook viewer attention.
+                                 </p>
+                                 <div class="project-role-bar">
+                                    <span>Role: <strong>Commercial Editor</strong></span>
+                                    <span class="text-white fw-bold">Health &amp; Wellness</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- 6. Short-Form Viral Reel: 17th -->
+                        <div class="col-12 col-md-6 col-lg-4 project-grid-item" data-category="reels">
+                           <div class="portfolio-card-custom topy-tilt fade-top">
+                              <div class="project-thumb-box">
+                                 <span class="project-badge-pill">9:16 Viral Reel</span>
+                                 <img src="assets/images/custom_thumbnails/reels_shortform_17th.jpg" alt="Viral Reel - 17th">
+                                 <div class="project-play-icon-overlay">
+                                    <a href="https://vimeo.com/1237974990" class="play-icon-circle open-custom-video-btn" data-embed-url="https://player.vimeo.com/video/1237974990?autoplay=1" aria-label="Play 17th Reel">
+                                       <i class="fa-solid fa-play"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="project-content-box">
+                                 <div class="project-channel-tag">
+                                    <i class="fa-solid fa-bolt"></i> Short Form Content
+                                 </div>
+                                 <h3 class="project-title-h4">
+                                    <a href="https://vimeo.com/1237974990" class="open-custom-video-btn" data-embed-url="https://player.vimeo.com/video/1237974990?autoplay=1">
+                                       "17th" — Fast-Paced Social Cut
+                                    </a>
+                                 </h3>
+                                 <p class="project-desc-p">
+                                    Engineered for high social retention with 1–3 sec pattern interrupts, dynamic text punch-ins, audio ducking, and rhythmic frame-by-frame cutting.
+                                 </p>
+                                 <div class="project-role-bar">
+                                    <span>Role: <strong>Short-Form Retention Editor</strong></span>
+                                    <span class="text-white fw-bold">Vimeo Video</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- 7. Short-Form Viral Reel: Episode 03-2 -->
+                        <div class="col-12 col-md-6 col-lg-4 project-grid-item" data-category="reels">
+                           <div class="portfolio-card-custom topy-tilt fade-top">
+                              <div class="project-thumb-box">
+                                 <span class="project-badge-pill">9:16 Viral Reel</span>
+                                 <img src="assets/images/custom_thumbnails/reels_shortform_ep3.jpg" alt="Viral Reel - Episode 03-2">
+                                 <div class="project-play-icon-overlay">
+                                    <a href="https://vimeo.com/1237975242" class="play-icon-circle open-custom-video-btn" data-embed-url="https://player.vimeo.com/video/1237975242?autoplay=1" aria-label="Play Episode 03-2 Reel">
+                                       <i class="fa-solid fa-play"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                              <div class="project-content-box">
+                                 <div class="project-channel-tag">
+                                    <i class="fa-solid fa-bolt"></i> Short Form Content
+                                 </div>
+                                 <h3 class="project-title-h4">
+                                    <a href="https://vimeo.com/1237975242" class="open-custom-video-btn" data-embed-url="https://player.vimeo.com/video/1237975242?autoplay=1">
+                                       "Episode 03-2" — High-Energy Social Short
+                                    </a>
+                                 </h3>
+                                 <p class="project-desc-p">
+                                    Creative short-form cut combining speed ramps, seamless masking transitions, and modern typography animation to stop the scroll instantly.
+                                 </p>
+                                 <div class="project-role-bar">
+                                    <span>Role: <strong>Short-Form Retention Editor</strong></span>
+                                    <span class="text-white fw-bold">Vimeo Video</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+
+                  <div class="lines d-none d-lg-flex">
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                  </div>
+               </section>
+               <!-- ==== / portfolio end ==== -->
+
+               <!-- ==== offer start (20-Point Technical Mastery & Verified Software Stack) ==== -->
+               <section class="section offer fade-wrapper light" id="services">
+                  <div class="container">
+                     <div class="row gaper">
+                        <div class="col-12 col-lg-5">
+                           <div class="offer__content section__content">
+                              <span class="sub-title">
+                                 WHAT I BRING TO THE TABLE
+                                 <i class="fa-solid fa-arrow-right"></i>
+                              </span>
+                              <h2 class="title title-anim">
+                                 From Vision to Final Cut: Verified Software &amp; Capabilities
+                              </h2>
+                              <div class="paragraph">
+                                 <p>A battle-tested 15-year editing ecosystem. Specializing in high-performance NLE workflows, custom cinematic color science, and modern AI audio/video enhancement tools.</p>
+                              </div>
+
+                              <!-- Verified Software Stack Badges -->
+                              <div class="mt-4">
+                                 <h6 class="text-white fw-bold text-uppercase letter-spacing-1 mb-3">Primary Tooling Stack</h6>
+                                 <div>
+                                    <div class="software-badge-pill">
+                                       <i class="fa-brands fa-apple"></i> Final Cut Pro (Primary NLE)
+                                    </div>
+                                    <div class="software-badge-pill">
+                                       <i class="fa-solid fa-wand-magic-sparkles"></i> Adobe After Effects (Motion &amp; VFX)
+                                    </div>
+                                    <div class="software-badge-pill">
+                                       <i class="fa-solid fa-palette"></i> Final Cut Pro &amp; Custom Cinematic LUTs
+                                    </div>
+                                    <div class="software-badge-pill">
+                                       <i class="fa-solid fa-microchip"></i> AI Suite: Whisper, Descript, Topaz, ElevenLabs
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="section__content-cta mt-4">
+                                 <a href="#contact" class="btn btn--secondary">Book a Consultation</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- 4 Mastery Pillars Accordion / Cards -->
+                        <div class="col-12 col-lg-7 col-xl-6 offset-xl-1">
+                           <div class="offer__cta">
+                              <div class="offer__cta-single fade-top">
+                                 <span class="sub-title">
+                                    01
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                 </span>
+                                 <h2>
+                                    <a href="#services">
+                                       Story &amp; Pacing Architecture
+                                       <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                 </h2>
+                                 <p class="text-muted small mt-2 mb-0">Editing Fundamentals · Narrative Arc · Tension &amp; Hooks · Documentary Storytelling · Knowing what NOT to edit.</p>
+                              </div>
+
+                              <div class="offer__cta-single fade-top">
+                                 <span class="sub-title">
+                                    02
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                 </span>
+                                 <h2>
+                                    <a href="#services">
+                                       Sound &amp; Color Finishing
+                                       <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                 </h2>
+                                 <p class="text-muted small mt-2 mb-0">Dialogue Cleanup · Noise Reduction · EQ &amp; Compression · SFX/Ambience Sync · Custom Film LUTs &amp; Skin Tones.</p>
+                              </div>
+
+                              <div class="offer__cta-single fade-top">
+                                 <span class="sub-title">
+                                    03
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                 </span>
+                                 <h2>
+                                    <a href="#services">
+                                       Motion Graphics &amp; VFX
+                                       <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                 </h2>
+                                 <p class="text-muted small mt-2 mb-0">After Effects Typography · Speed Ramps · Seamless Transitions · Rotoscoping · Green Screen &amp; Object Tracking.</p>
+                              </div>
+
+                              <div class="offer__cta-single fade-top">
+                                 <span class="sub-title">
+                                    04
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                 </span>
+                                 <h2>
+                                    <a href="#services">
+                                       Platform Formats &amp; AI
+                                       <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                 </h2>
+                                 <p class="text-muted small mt-2 mb-0">Multi-Cam Podcasts · Ads &amp; VSLs · 9:16 Social Reframing · AI Captions &amp; Speech-to-Text · Broadcast Codecs.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <img src="assets/images/offer/star.png" alt="Image" class="star">
+                  <div class="lines d-none d-lg-flex">
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                  </div>
+               </section>
+               <!-- ==== / offer end ==== -->
+
+               <!-- ==== sponsor start (Client Brand Logos Marquee) ==== -->
+               <div class="sponsor section pb-0" id="brands">
+                  <div class="container-fluid">
+                     <div class="row justify-content-center">
+                        <div class="col-12">
+                           <div class="section__header text-center mb-4">
+                              <span class="sub-title">
+                                 TRUSTED BY CREATORS &amp; BRANDS
+                                 <i class="fa-solid fa-arrow-right"></i>
+                              </span>
+                           </div>
+                           <div class="sponsor__slider">
+                              <div class="brand-logo-slide-item">
+                                 <img src="assets/images/sponsor/brand-happiness.svg" alt="Happiness Movement">
+                              </div>
+                              <div class="brand-logo-slide-item">
+                                 <img src="assets/images/sponsor/brand-anurag-rishi.svg" alt="ANURAG RISHI">
+                              </div>
+                              <div class="brand-logo-slide-item">
+                                 <img src="assets/images/sponsor/brand-dr-shikha.svg" alt="Dr. Shikha Sharma Rishi">
+                              </div>
+                              <div class="brand-logo-slide-item">
+                                 <img src="assets/images/sponsor/brand-sumit-dubey.svg" alt="Sumit Dubey Podcast">
+                              </div>
+                              <div class="brand-logo-slide-item">
+                                 <img src="assets/images/sponsor/brand-shortform.svg" alt="Short Form Content">
+                              </div>
+                              <div class="brand-logo-slide-item">
+                                 <img src="assets/images/sponsor/brand-happiness.svg" alt="Happiness Movement">
+                              </div>
+                              <div class="brand-logo-slide-item">
+                                 <img src="assets/images/sponsor/brand-anurag-rishi.svg" alt="ANURAG RISHI">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="lines d-none d-lg-flex">
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                  </div>
+               </div>
+               <!-- ==== / sponsor end ==== -->
+
+               <!-- ==== 5-step workflow start ==== -->
+               <section class="section workflow-sec position-relative" id="workflow">
+                  <div class="container">
+                     <div class="row justify-content-center mb-5">
+                        <div class="col-12 col-lg-8 text-center">
+                           <span class="sub-title">
+                              HOW I WORK
+                              <i class="fa-solid fa-arrow-right"></i>
+                           </span>
+                           <h2 class="title title-anim mt-2">The 5-Step Filmmaking &amp; Editing Workflow</h2>
+                        </div>
+                     </div>
+                     <div class="workflow-steps-horizontal">
+                        <div class="workflow-step-card topy-tilt">
+                           <div class="workflow-step-num">01</div>
+                           <h4>Understand</h4>
+                           <p>Identify the emotional core, target audience, brand voice, and defining moments before opening the project.</p>
+                        </div>
+                        <div class="workflow-step-card topy-tilt">
+                           <div class="workflow-step-num">02</div>
+                           <h4>Capture / Ingest</h4>
+                           <p>Framing and lighting with intention for shoots; organizing proxies, multicam syncs, and selects for edits.</p>
+                        </div>
+                        <div class="workflow-step-card topy-tilt">
+                           <div class="workflow-step-num">03</div>
+                           <h4>Shape</h4>
+                           <p>Assemble the rough cut, establish rhythm and pacing, ensure continuity, and make every single cut earn its place.</p>
+                        </div>
+                        <div class="workflow-step-card topy-tilt">
+                           <div class="workflow-step-num">04</div>
+                           <h4>Refine</h4>
+                           <p>Dial in dialogue cleanup, sound design, custom cinematic LUTs, motion graphics, and audio mixing.</p>
+                        </div>
+                        <div class="workflow-step-card topy-tilt">
+                           <div class="workflow-step-num">05</div>
+                           <h4>Deliver</h4>
+                           <p>Master platform-ready 4K/1080p files, vertical 9:16 shorts, and deliver complete project handoffs on time.</p>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- ==== / workflow end ==== -->
+
+               <!-- ==== testimonial start ==== -->
+               <section class="section testimonial pt-0 position-relative">
+                  <div class="testimonial__text-slider">
+                     <div class="testimonial__text-slider-single">
+                        <h2 class="h1">
+                           <a href="#about">
+                              client's testimonial
+                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
+                           </a>
+                        </h2>
+                     </div>
+                     <div class="testimonial__text-slider-single">
+                        <h2 class="h1">
+                           <a href="#about">
+                              client's testimonial
+                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
+                           </a>
+                        </h2>
+                     </div>
+                     <div class="testimonial__text-slider-single">
+                        <h2 class="h1">
+                           <a href="#about">
+                              client's testimonial
+                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
+                           </a>
+                        </h2>
+                     </div>
+                     <div class="testimonial__text-slider-single">
+                        <h2 class="h1">
+                           <a href="#about">
+                              client's testimonial
+                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
+                           </a>
+                        </h2>
+                     </div>
+                  </div>
+                  <div class="container position-relative">
+                     <div class="row">
+                        <div class="col-12 col-xxl-10">
+                           <div class="testimonial-s__slider">
+                               <!-- Testimonial 1: Anurag Rishi -->
+                               <div class="testimonial-s__slider-single">
+                                  <div class="row gaper align-items-center">
+                                     <div class="col-12 col-lg-4 col-xxl-4">
+                                        <div class="thumb">
+                                           <img src="assets/images/testimonial/anurag rishi.png" alt="Anurag Rishi">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
+                                              viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
+                                              <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
+                                           </svg>
+                                        </div>
+                                     </div>
+                                     <div class="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
+                                        <div class="testimonial-s__content">
+                                           <div class="quote">
+                                              <i class="fa-solid fa-quote-right"></i>
+                                           </div>
+                                           <div class="content">
+                                              <h4>"The audience retention and watch time on our podcasts and health videos improved drastically after Prashant took over our post-production. His dialogue cuts, pacing resets, and sound design are second to none. He understands how to make wisdom bingeable."</h4>
+                                           </div>
+                                           <div class="content-cta">
+                                              <h5>Anurag Rishi</h5>
+                                              <p>Life Coach &amp; Wellness Thought Leader</p>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+
+                               <!-- Testimonial 2: Chitresh Soni -->
+                               <div class="testimonial-s__slider-single">
+                                  <div class="row gaper align-items-center">
+                                     <div class="col-12 col-lg-4 col-xxl-4">
+                                        <div class="thumb">
+                                           <img src="assets/images/testimonial/client_chitresh_soni.jpg" alt="Chitresh Soni">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
+                                              viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
+                                              <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
+                                           </svg>
+                                        </div>
+                                     </div>
+                                     <div class="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
+                                        <div class="testimonial-s__content">
+                                           <div class="quote">
+                                              <i class="fa-solid fa-quote-right"></i>
+                                           </div>
+                                           <div class="content">
+                                              <h4>"Prashant brings director-level vision to the editing table. His sense of rhythm, cinematic color grading, and rapid turnaround speed on complex multicam timelines make him an indispensable creative partner for high-stakes media campaigns."</h4>
+                                           </div>
+                                           <div class="content-cta">
+                                              <h5>Chitresh Soni</h5>
+                                              <p>Brand Strategist &amp; Creative Producer</p>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+
+                               <!-- Testimonial 3: Basesh Gala -->
+                               <div class="testimonial-s__slider-single">
+                                  <div class="row gaper align-items-center">
+                                     <div class="col-12 col-lg-4 col-xxl-4">
+                                        <div class="thumb">
+                                           <img src="assets/images/testimonial/client_basesh_gala.jpg" alt="Basesh Gala">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
+                                              viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
+                                              <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
+                                           </svg>
+                                        </div>
+                                     </div>
+                                     <div class="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
+                                        <div class="testimonial-s__content">
+                                           <div class="quote">
+                                              <i class="fa-solid fa-quote-right"></i>
+                                           </div>
+                                           <div class="content">
+                                              <h4>"In premium business education, every frame must earn the viewer's trust. Prashant’s surgical editing and dynamic camera composition elevated our masterclasses to an international broadcast standard. Exceptional professionalism."</h4>
+                                           </div>
+                                           <div class="content-cta">
+                                              <h5>Basesh Gala</h5>
+                                              <p>Business Mentor &amp; Transformation Coach</p>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+
+                               <!-- Testimonial 4: Sumit Dubey -->
+                               <div class="testimonial-s__slider-single">
+                                  <div class="row gaper align-items-center">
+                                     <div class="col-12 col-lg-4 col-xxl-4">
+                                        <div class="thumb">
+                                           <img src="assets/images/testimonial/client_sumit_dubey.jpg" alt="Sumit Dubey">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
+                                              viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
+                                              <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
+                                           </svg>
+                                        </div>
+                                     </div>
+                                     <div class="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
+                                        <div class="testimonial-s__content">
+                                           <div class="quote">
+                                              <i class="fa-solid fa-quote-right"></i>
+                                           </div>
+                                           <div class="content">
+                                              <h4>"Working with Prashant on our long-form coaching podcasts is completely seamless. Flawless audio mastering, cinematic color palettes, and reliable on-time delivery every single week without fail. Our episodes look and sound world-class."</h4>
+                                           </div>
+                                           <div class="content-cta">
+                                              <h5>Sumit Dubey</h5>
+                                              <p>Podcaster &amp; Business Coach</p>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+
+                               <!-- Testimonial 5: Priyanka Bansal -->
+                               <div class="testimonial-s__slider-single">
+                                  <div class="row gaper align-items-center">
+                                     <div class="col-12 col-lg-4 col-xxl-4">
+                                        <div class="thumb">
+                                           <img src="assets/images/testimonial/client_priyanka_bansal.jpg" alt="Priyanka Bansal">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
+                                              viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
+                                              <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
+                                           </svg>
+                                        </div>
+                                     </div>
+                                     <div class="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
+                                        <div class="testimonial-s__content">
+                                           <div class="quote">
+                                              <i class="fa-solid fa-quote-right"></i>
+                                           </div>
+                                           <div class="content">
+                                              <h4>"Prashant knows how to turn a conversation into a powerful emotional narrative. His ability to isolate micro-moments and punch in key insights transformed our audience engagement and personal brand reach across platforms."</h4>
+                                           </div>
+                                           <div class="content-cta">
+                                              <h5>Priyanka Bansal</h5>
+                                              <p>Leadership Mentor &amp; Creator</p>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+
+                               <!-- Testimonial 6: Shikha Sharma -->
+                               <div class="testimonial-s__slider-single">
+                                  <div class="row gaper align-items-center">
+                                     <div class="col-12 col-lg-4 col-xxl-4">
+                                        <div class="thumb">
+                                           <img src="assets/images/testimonial/client_shikha_sharma.jpg" alt="Dr. Shikha Sharma">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
+                                              viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
+                                              <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
+                                           </svg>
+                                        </div>
+                                     </div>
+                                     <div class="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
+                                        <div class="testimonial-s__content">
+                                           <div class="quote">
+                                              <i class="fa-solid fa-quote-right"></i>
+                                           </div>
+                                           <div class="content">
+                                              <h4>"Prashant has an extraordinary eye for nuance and depth. His camera work and multicam editing for our spiritual and health dialogues created a calm, visually stunning aesthetic that our listeners constantly praise."</h4>
+                                           </div>
+                                           <div class="content-cta">
+                                              <h5>Dr. Shikha Sharma</h5>
+                                              <p>Author, Wellness Doctor &amp; Podcast Host</p>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div></div>
+                        </div>
+                     </div>
+                     <div class="slide-group justify-content-start">
+                        <a href="javascript:void(0)" aria-label="previous item" class="slide-btn prev-testimonial-three">
+                           <i class="fa-light fa-angle-left"></i>
+                        </a>
+                        <a href="javascript:void(0)" aria-label="next item" class="slide-btn next-testimonial-three">
+                           <i class="fa-light fa-angle-right"></i>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="lines d-none d-lg-flex">
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                  </div>
+               </section>
+               <!-- ==== / testimonial end ==== -->
+
+               <!-- ==== contact / let's talk start ==== -->
+               <section class="section contact-main-section position-relative" id="contact">
+                  <div class="container">
+                     <div class="row justify-content-center mb-5">
+                        <div class="col-12 col-lg-8 text-center">
+                           <span class="sub-title">
+                              LET'S TALK
+                              <i class="fa-solid fa-arrow-right"></i>
+                           </span>
+                           <h2 class="title mt-2 text-white fw-bold">Have a Film, Podcast, or Campaign? Let's Connect.</h2>
+                           <p class="text-muted mt-3">Share your timeline, multicam footage, or concept brief. Prashant reviews and replies personally within 24 hours.</p>
+                        </div>
+                     </div>
+
+                     <div class="row gaper align-items-stretch mb-5">
+                        <!-- Direct Info Cards -->
+                        <div class="col-12 col-lg-5">
+                           <div class="row g-3 h-100">
+                              <div class="col-12">
+                                 <div class="contact-card-info">
+                                    <div class="icon-box">
+                                       <i class="fa-brands fa-whatsapp text-success"></i>
+                                    </div>
+                                    <h5 class="text-white">WhatsApp / Instant Message</h5>
+                                    <p class="text-muted mb-2">Fast turnaround &amp; urgent project inquiries:</p>
+                                    <a href="https://wa.me/" target="_blank" class="text-primary fw-bold">Direct WhatsApp Chat <i class="fa-solid fa-arrow-up-right ms-1"></i></a>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="contact-card-info">
+                                    <div class="icon-box">
+                                       <i class="fa-sharp fa-solid fa-envelope"></i>
+                                    </div>
+                                    <h5 class="text-white">Email Directly</h5>
+                                    <p class="text-muted mb-2">For commercial projects, multicam retainers &amp; post-production inquiries:</p>
+                                    <a href="mailto:contact@prashantsharma.com" class="text-primary fw-bold">contact@prashantsharma.com</a>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="contact-card-info">
+                                    <div class="icon-box">
+                                       <i class="fa-sharp fa-solid fa-clapperboard"></i>
+                                    </div>
+                                    <h5 class="text-white">Location &amp; Delivery</h5>
+                                    <p class="text-muted mb-1">On-location shoots: Pan-India &amp; International</p>
+                                    <p class="text-white mb-0">Post-Production: Remote High-Speed Cloud Workflows</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- Inquiry Submission Form with Name, WhatsApp Number & Email -->
+                        <div class="col-12 col-lg-7">
+                           <div class="contact-main__form">
+                              <div class="d-flex align-items-center justify-content-between mb-3">
+                                 <h3 class="text-white mb-0">Get In Touch</h3>
+                                 <span class="badge bg-dark border border-secondary text-primary px-3 py-2"><i class="fa-solid fa-bolt me-1"></i> Quick Response</span>
+                              </div>
+                              <p class="text-muted small mb-4">Leave your details below and Prashant will connect with you directly via WhatsApp or Email.</p>
+
+                              <!-- Active Form -->
+                              <form id="projectInquiryForm" novalidate>
+                                 <div class="group-input">
+                                    <label for="contactName" class="form-label"><i class="fa-solid fa-user me-1 text-primary"></i> Full Name <span class="req">*</span></label>
+                                    <input type="text" name="name" id="contactName" placeholder="e.g. Anurag Sharma" required>
+                                 </div>
+
+                                 <div class="group-wrapper">
+                                    <div class="group-input">
+                                       <label for="contactWhatsApp" class="form-label"><i class="fa-brands fa-whatsapp me-1 text-success"></i> WhatsApp Number <span class="req">*</span></label>
+                                       <input type="tel" name="whatsapp" id="contactWhatsApp" placeholder="e.g. +91 98765 43210" required>
+                                    </div>
+                                    <div class="group-input">
+                                       <label for="contactEmail" class="form-label"><i class="fa-solid fa-envelope me-1 text-primary"></i> Email Address <span class="req">*</span></label>
+                                       <input type="email" name="email" id="contactEmail" placeholder="e.g. anurag@studio.com" required>
+                                    </div>
+                                 </div>
+
+                                 <div class="group-input">
+                                    <label for="contactMessage" class="form-label"><i class="fa-solid fa-message me-1 text-muted"></i> Project Note / Message <span class="text-muted fw-normal">(Optional)</span></label>
+                                    <textarea name="message" id="contactMessage" rows="3" placeholder="Tell us about your project, timeline, deliverables, or link to raw footage/brief..."></textarea>
+                                 </div>
+
+                                 <div class="form-cta mt-4">
+                                    <button type="submit" id="submitInquiryBtn" class="btn btn--primary w-100 py-3">
+                                       <span>Submit Inquiry</span> <i class="fa-solid fa-paper-plane ms-2"></i>
+                                    </button>
+                                 </div>
+                              </form>
+
+                              <!-- Submitted Success State -->
+                              <div id="formSuccessMessage" class="contact-success-state" style="display: none;">
+                                 <div class="success-icon">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                 </div>
+                                 <h4>Inquiry Submitted Successfully!</h4>
+                                 <p id="successSummaryText">Thank you! Your contact details have been received. Prashant will reach out to you within 24 hours.</p>
+                                 <div class="d-flex flex-wrap gap-3 justify-content-center mt-3">
+                                    <a href="https://wa.me/" id="quickWhatsAppBtn" target="_blank" class="btn btn--secondary btn-sm">
+                                       <i class="fa-brands fa-whatsapp me-2"></i> Continue on WhatsApp
+                                    </a>
+                                    <button type="button" id="resetFormBtn" class="btn btn--outline btn-sm">
+                                       <i class="fa-solid fa-rotate-left me-2"></i> Submit Another Inquiry
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Next Text Slider Bridge -->
+                  <div class="next__text-slider mt-4">
+                     <div class="next__text-slider-single">
+                        <h2 class="h1">
+                           <a href="mailto:contact@prashantsharma.com">
+                              Start a Project
+                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
+                           </a>
+                        </h2>
+                     </div>
+                     <div class="next__text-slider-single">
+                        <h2 class="h1">
+                           <a href="mailto:contact@prashantsharma.com">
+                              Start a Project
+                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
+                           </a>
+                        </h2>
+                     </div>
+                     <div class="next__text-slider-single">
+                        <h2 class="h1">
+                           <a href="mailto:contact@prashantsharma.com">
+                              Start a Project
+                              <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
+                           </a>
+                        </h2>
+                     </div>
+                  </div>
+                  <div class="lines d-none d-lg-flex">
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                     <div class="line"></div>
+                  </div>
+               </section>
+               <!-- ==== / contact end ==== -->
+            </main>
+            <!-- ==== / main end ==== -->
+
+            <!-- ==== footer start (Exact footer markup from reference assets index.html) ==== -->
+            <footer class="footer section pb-0" data-background="assets/images/footer/footer-bg.png">
+               <div class="container">
+                  <div class="row gaper">
+                     <div class="col-12 col-lg-5 col-xl-6">
+                        <div class="footer__single">
+                           <a href="index.html" class="brand-logo-text mb-3 d-inline-flex align-items-center">
+                              <img src="assets/images/banner/dark_studios_dark_theme_circle_safe.png" alt="Dark Studios Logo" class="brand-nav-icon me-2" style="height: 40px;">
+                              <span>PRASHANT <span>SHARMA</span><span class="dot"></span></span>
+                           </a>
+                           <div class="footer__single-meta mt-4">
+                              <a href="#about">
+                                 <i class="fa-sharp fa-solid fa-video"></i>
+                                 Cinematographer &amp; Senior Video Editor
+                              </a>
+                              <a href="mailto:contact@prashantsharma.com">
+                                 <i class="fa-sharp fa-solid fa-envelope"></i>
+                                 contact@prashantsharma.com
+                              </a>
+                              <a href="https://wa.me/" target="_blank">
+                                 <i class="fa-brands fa-whatsapp"></i>
+                                 Direct WhatsApp Inquiry
+                              </a>
+                           </div>
+                           <div class="footer__cta text-start mt-4">
+                              <a href="mailto:contact@prashantsharma.com" class="btn btn--secondary">Book a Call Now</a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-12 col-lg-3 col-xl-2">
+                        <div class="footer__single">
+                           <div class="footer__single-intro">
+                              <h5>Navigation</h5>
+                           </div>
+                           <div class="footer__single-content">
+                              <ul>
+                                 <li><a href="#home">Home</a></li>
+                                 <li><a href="#about">About Prashant</a></li>
+                                 <li><a href="#work">Selected Work</a></li>
+                                 <li><a href="#services">Capabilities</a></li>
+                                 <li><a href="#contact">Contact</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-12 col-lg-4 col-xl-4">
+                        <div class="footer__single">
+                           <div class="footer__single-intro">
+                              <h5>Have a Story to Tell?</h5>
+                           </div>
+                           <div class="footer__single-content">
+                              <p>Available for cinematography on set, high-profile podcast editing, commercial campaigns, retreat films, and ongoing creator partnerships.</p>
+                              <div class="mt-3">
+                                 <a href="mailto:contact@prashantsharma.com" class="btn btn--primary">Get in Touch</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="footer__copyright">
+                           <div class="row align-items-center gaper">
+                              <div class="col-12 col-lg-8">
+                                 <div class="footer__copyright-text text-center text-lg-start">
+                                    <p>
+                                       Copyright &copy;
+                                       <span id="copyYear">2026</span>
+                                       <strong>Prashant Sharma</strong>. Crafted for the stories that matter. All Rights Reserved.
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="col-12 col-lg-4">
+                                 <div class="social justify-content-center justify-content-lg-end">
+                                    <a href="https://www.youtube.com/@HappinessMovementOfficial" target="_blank" aria-label="YouTube">
+                                       <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                    <a href="https://vimeo.com" target="_blank" aria-label="Vimeo">
+                                       <i class="fa-brands fa-vimeo-v"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                                       <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </footer>
+            <!-- ==== / footer end ==== -->
+         </div>
+      </div>
+
+      <!-- ==== scroll to top start ==== -->
+      <button class="progress-wrap" aria-label="scroll indicator" title="go to top">
+         <span></span>
+         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+         </svg>
+      </button>
+      <!-- ==== / scroll to top end ==== -->
+
+      <!-- Background line animation -->
+      <div class="line">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+
+      <!-- Video Modal Lightbox Container (Transparent Overlay with Pop-up Animation) -->
+      <div id="universalVideoModal" class="custom-video-modal-wrap" aria-modal="true" role="dialog">
+         <div class="custom-video-modal-container" id="modalContainer">
+            <div class="custom-video-modal-bar">
+               <div class="modal-title-wrap">
+                  <span class="modal-pulse-dot"></span>
+                  <span class="modal-title-text" id="modalVideoTitle">Cinematic Preview</span>
+               </div>
+               <div class="modal-bar-actions">
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="custom-video-modal-ext-btn" id="modalExternalLink" aria-label="Open original video on host platform">
+                     <span>Open Video</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                  <button class="custom-video-modal-close-btn" id="modalCloseBtn" aria-label="Close Video">
+                     <span>Close</span> <i class="fa-solid fa-xmark"></i>
+                  </button>
+               </div>
+            </div>
+            <div class="custom-video-modal-frame-wrap">
+               <iframe id="modalVideoFrame" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- ==== js dependencies start (Exact script dependencies from reference assets index.html) ==== -->
+   <!-- jquery -->
+   <script src="assets/vendor/jquery/jquery-3.7.0.min.js"></script>
+   <!-- bootstrap five js -->
+   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <!-- nice select js -->
+   <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+   <!-- magnific popup js -->
+   <script src="assets/vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+   <!-- slick js -->
+   <script src="assets/vendor/slick/js/slick.min.js"></script>
+   <!-- image loaded js -->
+   <script src="assets/vendor/images-loaded/imagesloaded.pkgd.min.js"></script>
+   <!-- isotope js -->
+   <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+   <!-- chroma js -->
+   <script src="assets/vendor/gsap/chroma.min.js"></script>
+   <!-- splittext js -->
+   <script src="assets/vendor/gsap/SplitText.min.js"></script>
+   <!-- scrollsmoother js -->
+   <script src="assets/vendor/gsap/ScrollSmoother.min.js"></script>
+   <!-- scrollto js -->
+   <script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script>
+   <!-- scrolltrigger js -->
+   <script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+   <!-- gsap js -->
+   <script src="assets/vendor/gsap/gsap.min.js"></script>
+   <!-- vanilla tilt js -->
+   <script src="assets/vendor/vanilla-tilt/tilt.jquery.js"></script>
+   <!-- plugins js -->
+   <script src="assets/js/plugins.js"></script>
+   <!-- main js -->
+   <script src="assets/js/main.js"></script>
+
+   <!-- Custom Portfolio Interactive Scripts -->
+   <script>
+      (function($) {
+         "use strict";
+
+         $(document).ready(function() {
+            // Update Copyright Year
+            $("#copyYear").text(new Date().getFullYear());
+
+            // Portfolio Category Filter Logic
+            $(".filter-btn-item").on("click", function() {
+               $(".filter-btn-item").removeClass("active");
+               $(this).addClass("active");
+               var selectedFilter = $(this).attr("data-filter");
+
+               $(".project-grid-item").each(function() {
+                  if (selectedFilter === "all") {
+                     $(this).fadeIn(300);
+                  } else {
+                     var itemCategory = $(this).attr("data-category");
+                     if (itemCategory === selectedFilter) {
+                        $(this).fadeIn(300);
+                     } else {
+                        $(this).fadeOut(200);
+                     }
+                  }
+               });
+            });
+
+            // Universal Video Modal Player (Supporting YouTube, Vimeo, and Reels with Pop-up Animation)
+            function closeUniversalModal() {
+               $("#universalVideoModal").removeClass("is-active");
+               setTimeout(function() {
+                  $("#modalVideoFrame").attr("src", "");
+                  $("#modalContainer").removeClass("is-vertical");
+               }, 320);
+               $("body").css("overflow", "auto");
+            }
+
+            // Re-initialize Testimonial Slider with Fade and Zero Center Offset
+            // This ensures each testimonial card displays with its exact matching portrait and quote
+            if ($(".testimonial-s__slider").length) {
+               if ($(".testimonial-s__slider").hasClass("slick-initialized")) {
+                  $(".testimonial-s__slider").slick("unslick");
+               }
+               $(".testimonial-s__slider").slick({
+                  infinite: true,
+                  autoplay: true,
+                  focusOnSelect: false,
+                  slidesToShow: 1,
+                  speed: 700,
+                  autoplaySpeed: 5500,
+                  slidesToScroll: 1,
+                  arrows: true,
+                  prevArrow: $(".prev-testimonial-three"),
+                  nextArrow: $(".next-testimonial-three"),
+                  dots: false,
+                  centerMode: false,
+                  fade: true,
+                  cssEase: "linear"
+               });
+            }
+
+            $(".open-custom-video-btn").on("click", function(e) {
+               e.preventDefault();
+               var rawUrl = $(this).attr("href") || $(this).attr("data-embed-url");
+               var embedUrl = $(this).attr("data-embed-url") || rawUrl;
+               var watchUrl = rawUrl;
+
+               // Format embed URL if standard URL was passed
+               if (embedUrl.indexOf("youtube.com/watch?v=") !== -1) {
+                  var ytid = embedUrl.split("v=")[1].split("&")[0];
+                  embedUrl = "https://www.youtube.com/embed/" + ytid + "?autoplay=1&rel=0&modestbranding=1";
+                  watchUrl = "https://www.youtube.com/watch?v=" + ytid;
+               } else if (embedUrl.indexOf("youtu.be/") !== -1) {
+                  var ytid = embedUrl.split("youtu.be/")[1].split("?")[0];
+                  embedUrl = "https://www.youtube.com/embed/" + ytid + "?autoplay=1&rel=0&modestbranding=1";
+                  watchUrl = "https://youtu.be/" + ytid;
+               } else if (embedUrl.indexOf("vimeo.com/") !== -1 && embedUrl.indexOf("player.vimeo.com") === -1) {
+                  var vmid = embedUrl.split("vimeo.com/")[1].split("?")[0];
+                  embedUrl = "https://player.vimeo.com/video/" + vmid + "?autoplay=1";
+                  watchUrl = "https://vimeo.com/" + vmid;
+               }
+
+               // Extract project/video title
+               var projectCard = $(this).closest(".portfolio-card-custom");
+               var videoTitle = $(this).attr("data-video-title") || $(this).attr("aria-label");
+               if (!videoTitle && projectCard.length) {
+                  videoTitle = projectCard.find(".project-title-h4 a").text().trim() || projectCard.find(".project-title-h4").text().trim();
+               }
+               if (!videoTitle) {
+                  videoTitle = "Prashant Sharma — Visual Production Preview";
+               }
+               $("#modalVideoTitle").text(videoTitle.replace(/Play\s+/i, ""));
+               $("#modalExternalLink").attr("href", watchUrl);
+
+               // Check vertical format (e.g. 9:16 reels)
+               var isVertical = $(this).attr("data-aspect") === "vertical" ||
+                                (projectCard.length && projectCard.find(".project-badge-pill").text().toLowerCase().indexOf("reel") !== -1) ||
+                                embedUrl.indexOf("1237974990") !== -1 ||
+                                embedUrl.indexOf("1237975242") !== -1;
+
+               if (isVertical) {
+                  $("#modalContainer").addClass("is-vertical");
+               } else {
+                  $("#modalContainer").removeClass("is-vertical");
+               }
+
+               $("#modalVideoFrame").attr("src", embedUrl);
+               $("#universalVideoModal").addClass("is-active");
+               $("body").css("overflow", "hidden");
+            });
+
+            // Close Modal on Close Button Click
+            $("#modalCloseBtn").on("click", function(e) {
+               e.stopPropagation();
+               closeUniversalModal();
+            });
+
+            // Close Modal on Backdrop Click (outside modal container)
+            $("#universalVideoModal").on("click", function(e) {
+               if (e.target === this) {
+                  closeUniversalModal();
+               }
+            });
+
+            // Close Modal on Escape Key
+            $(document).on("keydown", function(e) {
+               if (e.key === "Escape" && $("#universalVideoModal").hasClass("is-active")) {
+                  closeUniversalModal();
+               }
+            });
+
+            // Interactive Project Inquiry Form Submission (Name, WhatsApp Number, Email)
+            $("#projectInquiryForm").on("submit", function(e) {
+               e.preventDefault();
+
+               var name = $("#contactName").val().trim();
+               var whatsapp = $("#contactWhatsApp").val().trim();
+               var email = $("#contactEmail").val().trim();
+               var message = $("#contactMessage").val().trim();
+
+               // Client-Side Validation
+               if (!name) {
+                  alert("Please enter your Full Name.");
+                  $("#contactName").focus();
+                  return;
+               }
+               if (!whatsapp) {
+                  alert("Please enter your WhatsApp Number so Prashant can reach you directly.");
+                  $("#contactWhatsApp").focus();
+                  return;
+               }
+               if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                  alert("Please provide a valid Email Address.");
+                  $("#contactEmail").focus();
+                  return;
+               }
+
+               var $submitBtn = $("#submitInquiryBtn");
+               var originalBtnHtml = $submitBtn.html();
+               $submitBtn.prop("disabled", true).html('<span>Submitting Details...</span> <i class="fa-solid fa-spinner fa-spin ms-2"></i>');
+
+               // Record Inquiry to LocalStorage
+               var submission = {
+                  name: name,
+                  whatsapp: whatsapp,
+                  email: email,
+                  message: message,
+                  timestamp: new Date().toISOString()
+               };
+
+               try {
+                  var pastInquiries = JSON.parse(localStorage.getItem("prashant_portfolio_inquiries") || "[]");
+                  pastInquiries.push(submission);
+                  localStorage.setItem("prashant_portfolio_inquiries", JSON.stringify(pastInquiries));
+               } catch (err) {
+                  console.log("Storage notice:", err);
+               }
+
+               // Prepare prefilled WhatsApp link with inquiry details
+               var waText = encodeURIComponent(
+                  "Hello Prashant,\nI submitted an inquiry on your portfolio:\n\n" +
+                  "• Name: " + name + "\n" +
+                  "• WhatsApp: " + whatsapp + "\n" +
+                  "• Email: " + email + "\n" +
+                  (message ? "• Project Note: " + message : "")
+               );
+               $("#quickWhatsAppBtn").attr("href", "https://wa.me/?text=" + waText);
+
+               // Smooth transition to confirmed success state
+               setTimeout(function() {
+                  $("#projectInquiryForm").slideUp(300, function() {
+                     $("#successSummaryText").html("Thank you, <strong>" + $("<div>").text(name).html() + "</strong>! Your inquiry details have been received. Prashant will contact you on WhatsApp at <strong>" + $("<div>").text(whatsapp).html() + "</strong> or Email at <strong>" + $("<div>").text(email).html() + "</strong> within 24 hours.");
+                     $("#formSuccessMessage").fadeIn(300);
+                  });
+                  $submitBtn.prop("disabled", false).html(originalBtnHtml);
+               }, 400);
+            });
+
+            // Reset Form to send another inquiry
+            $("#resetFormBtn").on("click", function() {
+               $("#formSuccessMessage").fadeOut(250, function() {
+                  $("#projectInquiryForm")[0].reset();
+                  $("#projectInquiryForm").slideDown(300);
+               });
+            });
+
+            // Smooth Scroll for Navlinks
+            $('a[href^="#"]').on("click", function(e) {
+               var target = $(this.getAttribute("href"));
+               if (target.length) {
+                  e.preventDefault();
+                  $("html, body").stop().animate({
+                     scrollTop: target.offset().top - 80
+                  }, 600);
+               }
+            });
+         });
+      })(jQuery);
+   </script>
+</body>
+
+</html>
