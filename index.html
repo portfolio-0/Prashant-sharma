@@ -99,6 +99,33 @@
          filter: drop-shadow(0 0 8px rgba(232, 22, 75, 0.4));
       }
 
+      body,
+      .my-app {
+         background-color: #000000;
+      }
+      body > .my-app,
+      .my-app {
+         position: relative;
+         isolation: isolate;
+      }
+      body > .my-app::before,
+      .my-app::before {
+         content: "";
+         position: fixed;
+         inset: 0;
+         background-image: url('images/dark_studios/dark_studios_494_white.png');
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: 52% auto;
+         opacity: 0.3;
+         pointer-events: none;
+         z-index: -1;
+      }
+      .lines,
+      .lines .line {
+         display: none !important;
+      }
+
       /* Testimonial Client Portraits with B/W Luxury Filter & Overlay */
       .testimonial-s__slider .thumb {
          width: 100%;
@@ -712,15 +739,18 @@
          align-items: center;
          justify-content: center;
          height: 80px;
-         padding: 10px 24px;
-         margin: 0 10px;
-         background: #101010;
-         border: 1px solid #222;
-         border-radius: 4px;
-         transition: all 0.3s ease;
+         padding: 10px 18px;
+         margin: 0 8px;
+         background: transparent;
+         border: none;
+         border-radius: 0;
+         transition: none;
+      }
+      .brand-logo-slide-item:last-child {
+         margin-right: 24px;
       }
       .brand-logo-slide-item:hover {
-         border-color: var(--primary-color);
+         border-color: transparent;
       }
       .brand-logo-slide-item img {
          max-height: 44px;
