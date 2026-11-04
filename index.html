@@ -11,13 +11,31 @@
    <meta name="keywords" content="Prashant Sharma, Cinematographer, Video Editor, Final Cut Pro, After Effects, Podcast Editor, Color Grading, Short-form Reels, India">
 
    <!-- Title & Favicon -->
-   <title>Dark Studios </title>
+   <title>Prashant Sharma — Cinematographer &amp; Video Editor | Dark Studios</title>
+   <link rel="canonical" href="https://portfolio-0.github.io/Prashant-sharma/">
+
+   <!-- Link previews (WhatsApp, LinkedIn, Facebook, X) -->
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="Dark Studios">
+   <meta property="og:url" content="https://portfolio-0.github.io/Prashant-sharma/">
+   <meta property="og:title" content="Prashant Sharma — Cinematographer &amp; Video Editor | Dark Studios">
+   <meta property="og:description" content="Prashant Sharma — Cinematographer, Senior Video Editor &amp; Visual Storyteller with 15+ years of experience in cinematic filmmaking, podcasts, commercials, and viral social retention editing.">
+   <meta property="og:image" content="https://portfolio-0.github.io/Prashant-sharma/images/og-image.jpg">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+   <meta property="og:image:alt" content="Prashant Sharma, Cinematographer and Senior Video Editor at Dark Studios">
+   <meta property="og:locale" content="en_IN">
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Prashant Sharma — Cinematographer &amp; Video Editor | Dark Studios">
+   <meta name="twitter:description" content="Prashant Sharma — Cinematographer, Senior Video Editor &amp; Visual Storyteller with 15+ years of experience in cinematic filmmaking, podcasts, commercials, and viral social retention editing.">
+   <meta name="twitter:image" content="https://portfolio-0.github.io/Prashant-sharma/images/og-image.jpg">
    <link rel="shortcut icon" href="images/dark_studios/dark_studios_color.png" type="image/x-icon">
 
    <!-- CSS Dependencies -->
    <link rel="stylesheet" href="Assets1/vendor/bootstrap/css/bootstrap.min.css">
    <!-- <link rel="stylesheet" href="Assets1/vendor/glyyphter/css/xpovio.css"> -->
-   <link rel="stylesheet" href="Assets1/vendor/font-awesome/css/all.css">
+   <!-- Slim icon set: only the icons this page uses (full set: css/all.css) -->
+   <link rel="stylesheet" href="Assets1/vendor/font-awesome/css/icons.min.css">
    <link rel="stylesheet" href="Assets1/vendor/nice-select/css/nice-select.css">
    <link rel="stylesheet" href="Assets1/vendor/magnific-popup/css/magnific-popup.css">
    <link rel="stylesheet" href="Assets1/vendor/slick/css/slick.css">
@@ -107,6 +125,15 @@
       .my-app {
          position: relative;
          isolation: isolate;
+         /* 100vw includes the scrollbar, which hid the right edge on
+            desktops with visible scrollbars. Fit the visible width instead. */
+         width: 100%;
+         min-width: 0;
+         max-width: 100%;
+         max-height: none;
+      }
+      body {
+         max-width: 100%;
       }
       body > .my-app::before,
       .my-app::before {
@@ -215,10 +242,12 @@
          max-width: 580px;
          margin: 12px auto 0;
       }
-      .agency .agency__content {
-         width: calc(100% + 100px);
-         max-width: calc(100% + 100px);
-         margin-right: -100px;
+      @media (min-width: 992px) {
+         .agency .agency__content {
+            width: calc(100% + 100px);
+            max-width: calc(100% + 100px);
+            margin-right: -100px;
+         }
       }
       .agency .star {
          width: 120px;
@@ -389,6 +418,22 @@
          color: var(--primary-color);
          margin-left: 2px;
          font-weight: bold;
+      }
+      .contact-main__form .group-input select option {
+         background: #111114;
+         color: #fff;
+      }
+      .contact-main__form .form-error-text {
+         color: #ff6b6b;
+         font-size: 14px;
+         min-height: 0;
+         margin: 8px 0 0;
+      }
+      .contact-main__form .form-error-text:empty {
+         display: none;
+      }
+      .contact-main__form .is-invalid {
+         border-color: #ff6b6b !important;
       }
       .contact-success-state {
          background: #14171d;
@@ -954,8 +999,6 @@
                         <div class="col-12 col-xl-10 text-center">
                            <!-- 1. SHORTENED TEXT STRICTLY ABOVE LOGO -->
                            <div class="hero-clean-header text-center">
-                             
-                              </span>
                               <h1 class="hero-short-headline">
                                  Cinematic Filmmaker &amp; <br><span class="text-stroke">Post-Production Specialist</span>
                               </h1>
@@ -1011,7 +1054,7 @@
                   </div>
                   <!-- Video Frame Button: Opens Know Thyself Retreat Signature Film -->
                   <a class="video-frame open-custom-video-btn" href="https://www.youtube.com/watch?v=TEWISIWAQYs" data-embed-url="https://www.youtube.com/embed/TEWISIWAQYs?autoplay=1" aria-label="Play Signature Showreel">
-                     <img src="images/video-frame.png" alt="Play Video Frame">
+                     <img src="images/video-frame.png" alt="Play the Know Thyself signature film">
                      <i class="fa-sharp fa-solid fa-play"></i>
                   </a>
                   <div class="lines d-none d-lg-flex">
@@ -1031,7 +1074,7 @@
                         <div class="col-12 col-lg-6">
                            <!-- Authentic Portrait Photo of Prashant Sharma -->
                            <div class="prashant-portrait-wrap mx-auto">
-                              <img src="images/prashant_profile_hq.jpg" alt="Prashant Sharma — Cinematographer &amp; Senior Video Editor">
+                              <img loading="lazy" decoding="async" src="images/prashant_profile_hq.jpg" alt="Prashant Sharma — Cinematographer &amp; Senior Video Editor">
                            </div>
                         </div>
                         <div class="col-12 col-lg-6">
@@ -1161,7 +1204,7 @@
                            <div class="portfolio-card-custom topy-tilt fade-top">
                               <div class="project-thumb-box">
                                  <span class="project-badge-pill">Documentary Film</span>
-                                 <img src="images/custom_thumbnails/retreat_may2026.jpg" alt="Know Thyself Mussoorie Retreat">
+                                 <img loading="lazy" decoding="async" src="images/custom_thumbnails/retreat_may2026.jpg" alt="Know Thyself Mussoorie Retreat">
                                  <div class="project-play-icon-overlay">
                                     <a href="https://www.youtube.com/watch?v=TEWISIWAQYs" class="play-icon-circle open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/TEWISIWAQYs?autoplay=1" aria-label="Play Know Thyself Film">
                                        <i class="fa-solid fa-play"></i>
@@ -1193,7 +1236,7 @@
                            <div class="portfolio-card-custom topy-tilt fade-top">
                               <div class="project-thumb-box">
                                  <span class="project-badge-pill">Multi-Cam Podcast</span>
-                                 <img src="images/custom_thumbnails/podcast_anurag_10x.jpg" alt="10X Better Life Anurag Rishi">
+                                 <img loading="lazy" decoding="async" src="images/custom_thumbnails/podcast_anurag_10x.jpg" alt="10X Better Life Anurag Rishi">
                                  <div class="project-play-icon-overlay">
                                     <a href="https://www.youtube.com/watch?v=xb1dYwhMg9o" class="play-icon-circle open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/xb1dYwhMg9o?autoplay=1" aria-label="Play Anurag Rishi Podcast">
                                        <i class="fa-solid fa-play"></i>
@@ -1225,7 +1268,7 @@
                            <div class="portfolio-card-custom topy-tilt fade-top">
                               <div class="project-thumb-box">
                                  <span class="project-badge-pill">Business &amp; Coaching</span>
-                                 <img src="images/custom_thumbnails/podcast_sumit_dubey.jpg" alt="Online Coaching Sumit Dubey">
+                                 <img loading="lazy" decoding="async" src="images/custom_thumbnails/podcast_sumit_dubey.jpg" alt="Online Coaching Sumit Dubey">
                                  <div class="project-play-icon-overlay">
                                     <a href="https://www.youtube.com/watch?v=261P3-ak-wg" class="play-icon-circle open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/261P3-ak-wg?autoplay=1" aria-label="Play Sumit Dubey Podcast">
                                        <i class="fa-solid fa-play"></i>
@@ -1257,7 +1300,7 @@
                            <div class="portfolio-card-custom topy-tilt fade-top">
                               <div class="project-thumb-box">
                                  <span class="project-badge-pill">Health &amp; Spirituality</span>
-                                 <img src="images/custom_thumbnails/podcast_shikha_osho.jpg" alt="Dr. Shikha Podcast OSHO Life Advice">
+                                 <img loading="lazy" decoding="async" src="images/custom_thumbnails/podcast_shikha_osho.jpg" alt="Dr. Shikha Podcast OSHO Life Advice">
                                  <div class="project-play-icon-overlay">
                                     <a href="https://www.youtube.com/watch?v=wIALV6PKwXM" class="play-icon-circle open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/wIALV6PKwXM?autoplay=1" aria-label="Play Dr. Shikha Podcast">
                                        <i class="fa-solid fa-play"></i>
@@ -1289,7 +1332,7 @@
                            <div class="portfolio-card-custom topy-tilt fade-top">
                               <div class="project-thumb-box">
                                  <span class="project-badge-pill">Commercial Explainer</span>
-                                 <img src="images/custom_thumbnails/anurag_ayurveda_superfood.jpg" alt="Ayurveda Superfood Barley Benefits">
+                                 <img loading="lazy" decoding="async" src="images/custom_thumbnails/anurag_ayurveda_superfood.jpg" alt="Ayurveda Superfood Barley Benefits">
                                  <div class="project-play-icon-overlay">
                                     <a href="https://www.youtube.com/watch?v=cec8ViZj1iw" class="play-icon-circle open-custom-video-btn" data-embed-url="https://www.youtube.com/embed/cec8ViZj1iw?autoplay=1" aria-label="Play Barley Superfood Video">
                                        <i class="fa-solid fa-play"></i>
@@ -1321,7 +1364,7 @@
                            <div class="portfolio-card-custom topy-tilt fade-top">
                               <div class="project-thumb-box">
                                  <span class="project-badge-pill">9:16 Viral Reel</span>
-                                 <img src="images/custom_thumbnails/reels_shortform_17th.jpg" alt="Short">
+                                 <img loading="lazy" decoding="async" src="images/custom_thumbnails/reels_shortform_17th.jpg" alt="Fast-paced social cut — 9:16 vertical reel thumbnail">
                                  <div class="project-play-icon-overlay">
                                     <a href="https://vimeo.com/1237974990" class="play-icon-circle open-custom-video-btn" data-embed-url="https://player.vimeo.com/video/1237974990?autoplay=1" aria-label="Play 17th Reel">
                                        <i class="fa-solid fa-play"></i>
@@ -1353,7 +1396,7 @@
                            <div class="portfolio-card-custom topy-tilt fade-top">
                               <div class="project-thumb-box">
                                  <span class="project-badge-pill">9:16 Viral Reel</span>
-                                 <img src="images/custom_thumbnails/reels_shortform_ep3.jpg" alt="">
+                                 <img loading="lazy" decoding="async" src="images/custom_thumbnails/reels_shortform_ep3.jpg" alt="High-energy social short — 9:16 vertical reel thumbnail">
                                  <div class="project-play-icon-overlay">
                                     <a href="https://vimeo.com/1237975242" class="play-icon-circle open-custom-video-btn" data-embed-url="https://player.vimeo.com/video/1237975242?autoplay=1" aria-label="Play Episode 03-2 Reel">
                                        <i class="fa-solid fa-play"></i>
@@ -1520,25 +1563,25 @@
                            </div>
                            <div class="sponsor__slider">
                               <div class="brand-logo-slide-item">
-                                 <img src="images/logo.png" alt="Happiness Movement">
+                                 <img loading="lazy" decoding="async" src="images/logo.png" alt="Happiness Movement">
                               </div>
                               <div class="brand-logo-slide-item">
-                                 <img src="images/logo.png" alt="ANURAG RISHI">
+                                 <img loading="lazy" decoding="async" src="images/logo.png" alt="ANURAG RISHI">
                               </div>
                               <div class="brand-logo-slide-item">
-                                 <img src="images/logo.png" alt="Dr. Shikha Sharma Rishi">
+                                 <img loading="lazy" decoding="async" src="images/logo.png" alt="Dr. Shikha Sharma Rishi">
                               </div>
                               <div class="brand-logo-slide-item">
-                                 <img src="images/logo.png" alt="Sumit Dubey Podcast">
+                                 <img loading="lazy" decoding="async" src="images/logo.png" alt="Sumit Dubey Podcast">
                               </div>
                               <div class="brand-logo-slide-item">
-                                 <img src="images/logo.png" alt="Short Form Content">
+                                 <img loading="lazy" decoding="async" src="images/logo.png" alt="Short Form Content">
                               </div>
                               <div class="brand-logo-slide-item">
-                                 <img src="images/logo.png" alt="Happiness Movement">
+                                 <img loading="lazy" decoding="async" src="images/logo.png" alt="Happiness Movement">
                               </div>
                               <div class="brand-logo-slide-item">
-                                 <img src="images/logo.png" alt="ANURAG RISHI">
+                                 <img loading="lazy" decoding="async" src="images/logo.png" alt="ANURAG RISHI">
                               </div>
                            </div>
                         </div>
@@ -1642,7 +1685,7 @@
                                   <div class="row gaper align-items-center">
                                      <div class="col-12 col-lg-4 col-xxl-4">
                                         <div class="thumb">
-                                           <img src="images/testimonial/client_anurag_rishi.jpg" alt="Anurag Rishi">
+                                           <img loading="lazy" decoding="async" src="images/testimonial/client_anurag_rishi.jpg" alt="Anurag Rishi">
                                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
                                               viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
                                               <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
@@ -1671,7 +1714,7 @@
                                   <div class="row gaper align-items-center">
                                      <div class="col-12 col-lg-4 col-xxl-4">
                                         <div class="thumb">
-                                           <img src="images/testimonial/client_chitresh_soni.jpg" alt="Chitresh Soni">
+                                           <img loading="lazy" decoding="async" src="images/testimonial/client_chitresh_soni.jpg" alt="Chitresh Soni">
                                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
                                               viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
                                               <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
@@ -1700,7 +1743,7 @@
                                   <div class="row gaper align-items-center">
                                      <div class="col-12 col-lg-4 col-xxl-4">
                                         <div class="thumb">
-                                           <img src="images/testimonial/client_basesh_gala.jpg" alt="Basesh Gala">
+                                           <img loading="lazy" decoding="async" src="images/testimonial/client_basesh_gala.jpg" alt="Basesh Gala">
                                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
                                               viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
                                               <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
@@ -1729,7 +1772,7 @@
                                   <div class="row gaper align-items-center">
                                      <div class="col-12 col-lg-4 col-xxl-4">
                                         <div class="thumb">
-                                           <img src="images/testimonial/client_sumit_dubey.jpg" alt="Sumit Dubey">
+                                           <img loading="lazy" decoding="async" src="images/testimonial/client_sumit_dubey.jpg" alt="Sumit Dubey">
                                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
                                               viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
                                               <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
@@ -1758,7 +1801,7 @@
                                   <div class="row gaper align-items-center">
                                      <div class="col-12 col-lg-4 col-xxl-4">
                                         <div class="thumb">
-                                           <img src="images/testimonial/client_priyanka_bansal.jpg" alt="Priyanka Bansal">
+                                           <img loading="lazy" decoding="async" src="images/testimonial/client_priyanka_bansal.jpg" alt="Priyanka Bansal">
                                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
                                               viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
                                               <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
@@ -1787,7 +1830,7 @@
                                   <div class="row gaper align-items-center">
                                      <div class="col-12 col-lg-4 col-xxl-4">
                                         <div class="thumb">
-                                           <img src="images/testimonial/client_shikha_sharma.jpg" alt="Dr. Shikha Sharma Rishi">
+                                           <img loading="lazy" decoding="async" src="images/testimonial/client_shikha_sharma.jpg" alt="Dr. Shikha Sharma Rishi">
                                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="322"
                                               viewBox="0 0 44 322" fill="none" class="d-none d-lg-block">
                                               <path d="M43 -0.000976562V151.999L2 192.999H43V321.999" stroke="#414141" />
@@ -1810,7 +1853,7 @@
                                      </div>
                                   </div>
                                </div>
-                            </div></div>
+                            </div>
                         </div>
                      </div>
                      <div class="slide-group justify-content-start">
@@ -1857,7 +1900,7 @@
                                     </div>
                                     <h5 class="text-white">WhatsApp / Instant Message</h5>
                                     <p class="text-muted mb-2">Fast turnaround &amp; urgent project inquiries:</p>
-                                    <a href="https://wa.me/" target="_blank" class="text-primary fw-bold">Direct WhatsApp Chat <i class="fa-solid fa-arrow-up-right ms-1"></i></a>
+                                    <a href="https://wa.me/917489845986" target="_blank" rel="noopener noreferrer" class="text-primary fw-bold">Direct WhatsApp Chat <i class="fa-solid fa-arrow-up-right ms-1"></i></a>
                                  </div>
                               </div>
                               <div class="col-12">
@@ -1867,7 +1910,7 @@
                                     </div>
                                     <h5 class="text-white">Email Directly</h5>
                                     <p class="text-muted mb-2">For commercial projects, multicam retainers &amp; post-production inquiries:</p>
-                                    <a href="mailto:contact@prashantsharma.com" class="text-primary fw-bold">contact@prashantsharma.com</a>
+                                    <a href="mailto:darkstudiosjbp@gmail.com" class="text-primary fw-bold">darkstudiosjbp@gmail.com</a>
                                  </div>
                               </div>
                               <div class="col-12">
@@ -1894,28 +1937,83 @@
 
                               <!-- Active Form -->
                               <form id="projectInquiryForm" novalidate>
+                                 <!-- Spam trap: real visitors never see or fill this -->
+                                 <input type="checkbox" name="botcheck" id="contactBotcheck" class="d-none" tabindex="-1" autocomplete="off">
+
                                  <div class="group-input">
                                     <label for="contactName" class="form-label"><i class="fa-solid fa-user me-1 text-primary"></i> Full Name <span class="req">*</span></label>
-                                    <input type="text" name="name" id="contactName" placeholder="e.g. Anurag Sharma" required>
+                                    <input type="text" name="name" id="contactName" placeholder="e.g. Anurag Sharma" autocomplete="name" required>
                                  </div>
 
                                  <div class="group-wrapper">
                                     <div class="group-input">
                                        <label for="contactWhatsApp" class="form-label"><i class="fa-brands fa-whatsapp me-1 text-success"></i> WhatsApp Number <span class="req">*</span></label>
-                                       <input type="tel" name="whatsapp" id="contactWhatsApp" placeholder="e.g. +91 98765 43210" required>
+                                       <input type="tel" name="whatsapp" id="contactWhatsApp" placeholder="e.g. +91 98765 43210" autocomplete="tel" required>
                                     </div>
                                     <div class="group-input">
                                        <label for="contactEmail" class="form-label"><i class="fa-solid fa-envelope me-1 text-primary"></i> Email Address <span class="req">*</span></label>
-                                       <input type="email" name="email" id="contactEmail" placeholder="e.g. anurag@studio.com" required>
+                                       <input type="email" name="email" id="contactEmail" placeholder="e.g. anurag@studio.com" autocomplete="email" required>
+                                    </div>
+                                 </div>
+
+                                 <div class="group-wrapper">
+                                    <div class="group-input">
+                                       <label for="contactCompany" class="form-label"><i class="fa-solid fa-crown me-1 text-primary"></i> Brand / Company</label>
+                                       <input type="text" name="company" id="contactCompany" placeholder="e.g. Happiness Movement" autocomplete="organization">
+                                    </div>
+                                    <div class="group-input">
+                                       <label for="contactCity" class="form-label"><i class="fa-solid fa-clapperboard me-1 text-primary"></i> City / Location</label>
+                                       <input type="text" name="city" id="contactCity" placeholder="e.g. Mumbai, or Remote" autocomplete="address-level2">
                                     </div>
                                  </div>
 
                                  <div class="group-input">
-                                    <label for="contactMessage" class="form-label"><i class="fa-solid fa-message me-1 text-muted"></i> Project Note / Message <span class="text-muted fw-normal">(Optional)</span></label>
-                                    <textarea name="message" id="contactMessage" rows="3" placeholder="Tell us about your project, timeline, deliverables, or link to raw footage/brief..."></textarea>
+                                    <label for="contactService" class="form-label"><i class="fa-solid fa-video me-1 text-primary"></i> What do you need? <span class="req">*</span></label>
+                                    <select name="service" id="contactService" required>
+                                       <option value="" selected disabled>Select a service</option>
+                                       <option>Podcast — Multicam Shoot + Edit</option>
+                                       <option>Podcast — Editing Only</option>
+                                       <option>Short-form Reels / Shorts</option>
+                                       <option>Documentary / Cinematic Film</option>
+                                       <option>Commercial / Brand Film</option>
+                                       <option>Event / Retreat Coverage</option>
+                                       <option>Color Grading / Post-Production</option>
+                                       <option>Something else</option>
+                                    </select>
                                  </div>
 
-                                 <div class="form-cta mt-4">
+                                 <div class="group-wrapper">
+                                    <div class="group-input">
+                                       <label for="contactBudget" class="form-label"><i class="fa-solid fa-bolt me-1 text-primary"></i> Budget Range</label>
+                                       <select name="budget" id="contactBudget">
+                                          <option value="" selected>Not sure yet</option>
+                                          <option>Under ₹25,000</option>
+                                          <option>₹25,000 – ₹75,000</option>
+                                          <option>₹75,000 – ₹2,00,000</option>
+                                          <option>₹2,00,000+</option>
+                                          <option>Monthly retainer</option>
+                                       </select>
+                                    </div>
+                                    <div class="group-input">
+                                       <label for="contactTimeline" class="form-label"><i class="fa-solid fa-circle-info me-1 text-primary"></i> Timeline</label>
+                                       <select name="timeline" id="contactTimeline">
+                                          <option value="" selected>Flexible</option>
+                                          <option>Urgent — within 1 week</option>
+                                          <option>2 – 4 weeks</option>
+                                          <option>1 – 3 months</option>
+                                          <option>Ongoing / recurring</option>
+                                       </select>
+                                    </div>
+                                 </div>
+
+                                 <div class="group-input">
+                                    <label for="contactMessage" class="form-label"><i class="fa-solid fa-message me-1 text-muted"></i> Project Details <span class="text-muted fw-normal">(Optional)</span></label>
+                                    <textarea name="message" id="contactMessage" rows="3" placeholder="Tell us about your project, deliverables, or share a link to footage / brief..."></textarea>
+                                 </div>
+
+                                 <p id="formErrorText" class="form-error-text" role="alert" aria-live="polite"></p>
+
+                                 <div class="form-cta mt-3">
                                     <button type="submit" id="submitInquiryBtn" class="btn btn--primary w-100 py-3">
                                        <span>Submit Inquiry</span> <i class="fa-solid fa-paper-plane ms-2"></i>
                                     </button>
@@ -1930,7 +2028,7 @@
                                  <h4>Inquiry Submitted Successfully!</h4>
                                  <p id="successSummaryText">Thank you! Your contact details have been received. Prashant will reach out to you within 24 hours.</p>
                                  <div class="d-flex flex-wrap gap-3 justify-content-center mt-3">
-                                    <a href="https://wa.me/" id="quickWhatsAppBtn" target="_blank" class="btn btn--secondary btn-sm">
+                                    <a href="https://wa.me/917489845986" id="quickWhatsAppBtn" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn-sm">
                                        <i class="fa-brands fa-whatsapp me-2"></i> Continue on WhatsApp
                                     </a>
                                     <button type="button" id="resetFormBtn" class="btn btn--outline btn-sm">
@@ -1947,7 +2045,7 @@
                   <div class="next__text-slider mt-4">
                      <div class="next__text-slider-single">
                         <h2 class="h1">
-                           <a href="mailto:contact@prashantsharma.com">
+                           <a href="mailto:darkstudiosjbp@gmail.com">
                               Start a Project
                               <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
                            </a>
@@ -1955,7 +2053,7 @@
                      </div>
                      <div class="next__text-slider-single">
                         <h2 class="h1">
-                           <a href="mailto:contact@prashantsharma.com">
+                           <a href="mailto:darkstudiosjbp@gmail.com">
                               Start a Project
                               <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
                            </a>
@@ -1963,7 +2061,7 @@
                      </div>
                      <div class="next__text-slider-single">
                         <h2 class="h1">
-                           <a href="mailto:contact@prashantsharma.com">
+                           <a href="mailto:darkstudiosjbp@gmail.com">
                               Start a Project
                               <i class="fa-sharp fa-solid fa-arrow-down-right"></i>
                            </a>
@@ -1989,7 +2087,7 @@
                      <div class="col-12 col-lg-5 col-xl-6">
                         <div class="footer__single">
                            <a href="index.html" class="brand-logo-text mb-3 d-inline-flex align-items-center">
-                              <img src="images/dark_studios/dark_studios_494_dark_theme.png" alt="Dark Studios Logo" class="brand-nav-icon me-2" style="height: 40px;">
+                              <img loading="lazy" decoding="async" src="images/dark_studios/dark_studios_494_dark_theme.png" alt="Dark Studios Logo" class="brand-nav-icon me-2" style="height: 40px;">
                               <span>PRASHANT <span>SHARMA</span><span class="dot"></span></span>
                            </a>
                            <div class="footer__single-meta mt-4">
@@ -2264,77 +2362,115 @@
                }
             });
 
-            // Interactive Project Inquiry Form Submission (Name, WhatsApp Number, Email)
+            // ===== Client Inquiry Form =====
+            // Email delivery: paste the free Web3Forms access key below
+            // (get it at https://web3forms.com using darkstudiosjbp@gmail.com).
+            // Until a key is added, inquiries are sent via WhatsApp instead.
+            var WEB3FORMS_ACCESS_KEY = "51a38a15-6d19-41aa-850f-81ea6ea11305";
+            var PRASHANT_WHATSAPP = "917489845986";
+
+            function fieldVal(id) { return ($("#" + id).val() || "").trim(); }
+            function escapeHtml(t) { return $("<div>").text(t).html(); }
+            function showFormError(msg, $field) {
+               $("#formErrorText").text(msg);
+               $("#projectInquiryForm .is-invalid").removeClass("is-invalid");
+               if ($field) { $field.addClass("is-invalid").trigger("focus"); }
+            }
+
+            $("#projectInquiryForm").on("input change", "input, select, textarea", function() {
+               $(this).removeClass("is-invalid");
+               $("#formErrorText").text("");
+            });
+
             $("#projectInquiryForm").on("submit", function(e) {
                e.preventDefault();
+               if ($("#contactBotcheck").is(":checked")) { return; }
 
-               var name = $("#contactName").val().trim();
-               var whatsapp = $("#contactWhatsApp").val().trim();
-               var email = $("#contactEmail").val().trim();
-               var message = $("#contactMessage").val().trim();
-
-               // Client-Side Validation
-               if (!name) {
-                  alert("Please enter your Full Name.");
-                  $("#contactName").focus();
-                  return;
-               }
-               if (!whatsapp) {
-                  alert("Please enter your WhatsApp Number so Prashant can reach you directly.");
-                  $("#contactWhatsApp").focus();
-                  return;
-               }
-               if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                  alert("Please provide a valid Email Address.");
-                  $("#contactEmail").focus();
-                  return;
-               }
-
-               var $submitBtn = $("#submitInquiryBtn");
-               var originalBtnHtml = $submitBtn.html();
-               $submitBtn.prop("disabled", true).html('<span>Submitting Details...</span> <i class="fa-solid fa-spinner fa-spin ms-2"></i>');
-
-               // Record Inquiry to LocalStorage
-               var submission = {
-                  name: name,
-                  whatsapp: whatsapp,
-                  email: email,
-                  message: message,
-                  timestamp: new Date().toISOString()
+               var d = {
+                  name: fieldVal("contactName"),
+                  whatsapp: fieldVal("contactWhatsApp"),
+                  email: fieldVal("contactEmail"),
+                  company: fieldVal("contactCompany"),
+                  city: fieldVal("contactCity"),
+                  service: fieldVal("contactService"),
+                  budget: fieldVal("contactBudget") || "Not sure yet",
+                  timeline: fieldVal("contactTimeline") || "Flexible",
+                  message: fieldVal("contactMessage")
                };
 
-               try {
-                  var pastInquiries = JSON.parse(localStorage.getItem("prashant_portfolio_inquiries") || "[]");
-                  pastInquiries.push(submission);
-                  localStorage.setItem("prashant_portfolio_inquiries", JSON.stringify(pastInquiries));
-               } catch (err) {
-                  console.log("Storage notice:", err);
+               if (!d.name) { return showFormError("Please enter your full name.", $("#contactName")); }
+               if (d.whatsapp.replace(/\D/g, "").length < 10) { return showFormError("Please enter a valid WhatsApp number (with country code if outside India).", $("#contactWhatsApp")); }
+               if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email)) { return showFormError("Please enter a valid email address.", $("#contactEmail")); }
+               if (!d.service) { return showFormError("Please choose the service you need.", $("#contactService")); }
+
+               var summary =
+                  "Hello Prashant, I'd like to discuss a project.\n\n" +
+                  "• Name: " + d.name + "\n" +
+                  "• WhatsApp: " + d.whatsapp + "\n" +
+                  "• Email: " + d.email + "\n" +
+                  (d.company ? "• Brand / Company: " + d.company + "\n" : "") +
+                  (d.city ? "• City / Location: " + d.city + "\n" : "") +
+                  "• Service: " + d.service + "\n" +
+                  "• Budget: " + d.budget + "\n" +
+                  "• Timeline: " + d.timeline + "\n" +
+                  (d.message ? "• Details: " + d.message : "");
+               var waUrl = "https://wa.me/" + PRASHANT_WHATSAPP + "?text=" + encodeURIComponent(summary);
+               $("#quickWhatsAppBtn").attr("href", waUrl);
+
+               var $btn = $("#submitInquiryBtn");
+               var originalBtnHtml = $btn.html();
+
+               function showSuccess(viaEmail) {
+                  var who = "Thank you, <strong>" + escapeHtml(d.name) + "</strong>! ";
+                  var body = viaEmail
+                     ? "Your inquiry has been sent to Prashant. He'll reply on WhatsApp (<strong>" + escapeHtml(d.whatsapp) + "</strong>) or email (<strong>" + escapeHtml(d.email) + "</strong>) within 24 hours."
+                     : "WhatsApp has opened with your details filled in — just press <strong>Send</strong> so Prashant receives them. If it didn't open, use the button below.";
+                  $("#successSummaryText").html(who + body);
+                  $("#projectInquiryForm").slideUp(300, function() { $("#formSuccessMessage").fadeIn(300); });
+                  $btn.prop("disabled", false).html(originalBtnHtml);
                }
 
-               // Prepare prefilled WhatsApp link with inquiry details
-               var waText = encodeURIComponent(
-                  "Hello Prashant,\nI submitted an inquiry on your portfolio:\n\n" +
-                  "• Name: " + name + "\n" +
-                  "• WhatsApp: " + whatsapp + "\n" +
-                  "• Email: " + email + "\n" +
-                  (message ? "• Project Note: " + message : "")
-               );
-               $("#quickWhatsAppBtn").attr("href", "https://wa.me/?text=" + waText);
+               if (!WEB3FORMS_ACCESS_KEY) {
+                  window.open(waUrl, "_blank", "noopener");
+                  showSuccess(false);
+                  return;
+               }
 
-               // Smooth transition to confirmed success state
-               setTimeout(function() {
-                  $("#projectInquiryForm").slideUp(300, function() {
-                     $("#successSummaryText").html("Thank you, <strong>" + $("<div>").text(name).html() + "</strong>! Your inquiry details have been received. Prashant will contact you on WhatsApp at <strong>" + $("<div>").text(whatsapp).html() + "</strong> or Email at <strong>" + $("<div>").text(email).html() + "</strong> within 24 hours.");
-                     $("#formSuccessMessage").fadeIn(300);
-                  });
-                  $submitBtn.prop("disabled", false).html(originalBtnHtml);
-               }, 400);
+               $btn.prop("disabled", true).html('<span>Sending...</span> <i class="fa-solid fa-spinner fa-spin ms-2"></i>');
+               fetch("https://api.web3forms.com/submit", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json", "Accept": "application/json" },
+                  body: JSON.stringify($.extend({
+                     access_key: WEB3FORMS_ACCESS_KEY,
+                     subject: "New project inquiry: " + d.service + " — " + d.name,
+                     from_name: "Dark Studios Portfolio",
+                     replyto: d.email,
+                     botcheck: false
+                  }, d))
+               }).then(function(r) { return r.json(); }).then(function(res) {
+                  if (res && res.success) { showSuccess(true); }
+                  else { throw new Error((res && res.message) || "Send failed"); }
+               }).catch(function() {
+                  $btn.prop("disabled", false).html(originalBtnHtml);
+                  showFormError("We couldn't send that right now. Please tap below to send it on WhatsApp instead.");
+                  $("#formErrorText").append(' <a href="' + waUrl + '" target="_blank" rel="noopener noreferrer" class="text-primary fw-bold">Send on WhatsApp</a>');
+               });
+            });
+
+            // Lazy images change page height as they load; re-measure scroll animations
+            var stRefreshTimer;
+            $("img[loading='lazy']").on("load", function() {
+               clearTimeout(stRefreshTimer);
+               stRefreshTimer = setTimeout(function() {
+                  if (window.ScrollTrigger) { ScrollTrigger.refresh(); }
+               }, 200);
             });
 
             // Reset Form to send another inquiry
             $("#resetFormBtn").on("click", function() {
                $("#formSuccessMessage").fadeOut(250, function() {
                   $("#projectInquiryForm")[0].reset();
+                  $("#formErrorText").text("");
                   $("#projectInquiryForm").slideDown(300);
                });
             });
