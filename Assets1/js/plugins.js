@@ -666,24 +666,30 @@
 		});
 
 		// 23. target id
+		// One handler for every in-page link. Uses ScrollSmoother when it is
+		// running (desktop/tablet) and a plain GSAP scroll otherwise (phones).
 		$('a[href^="#"]').on("click", function(event) {
+			var target = $(this).attr("href");
+			if (!target || target === "#" || !document.querySelector(target)) {
+				return;
+			}
 			event.preventDefault();
 
-			var target = $(this).attr("href");
-
-			gsap.to(window, {
-				scrollTo: {
-					y: target,
-					offsetY: 50,
-				},
-				duration: 0.5,
-				ease: "power3.inOut",
-			});
+			var smoother = window.ScrollSmoother && ScrollSmoother.get();
+			if (smoother) {
+				smoother.scrollTo(target, true, "top 80px");
+			} else {
+				gsap.to(window, {
+					scrollTo: { y: target, offsetY: 80 },
+					duration: 0.8,
+					ease: "power3.inOut",
+				});
+			}
 		});
 // 24. smooth scroll
 		if (device_width > 576) {
 			const smoother = ScrollSmoother.create({
-			  smooth: 2.2,
+			  smooth: 1.1,
 			  effects: device_width < 992 ? false : true,
 			  smoothTouch: false,
 			  normalizeScroll: false,

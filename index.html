@@ -135,6 +135,10 @@
       body {
          max-width: 100%;
       }
+      /* Native smooth scrolling fights GSAP ScrollSmoother and causes stutter */
+      html {
+         scroll-behavior: auto !important;
+      }
       body > .my-app::before,
       .my-app::before {
          content: "";
@@ -2469,14 +2473,14 @@
    <script src="Assets1/vendor/images-loaded/imagesloaded.pkgd.min.js"></script>
    <script src="Assets1/vendor/isotope/isotope.pkgd.min.js"></script>
    <script src="Assets1/vendor/gsap/chroma.min.js"></script>
-   <script src="Assets1/vendor/gsap/SplitText.min.js"></script>
-   <script src="Assets1/vendor/gsap/ScrollSmoother.min.js"></script>
-   <script src="Assets1/vendor/gsap/ScrollToPlugin.min.js"></script>
-   <script src="Assets1/vendor/gsap/ScrollTrigger.min.js"></script>
    <script src="Assets1/vendor/gsap/gsap.min.js"></script>
+   <script src="Assets1/vendor/gsap/ScrollTrigger.min.js"></script>
+   <script src="Assets1/vendor/gsap/ScrollToPlugin.min.js"></script>
+   <script src="Assets1/vendor/gsap/ScrollSmoother.min.js"></script>
+   <script src="Assets1/vendor/gsap/SplitText.min.js"></script>
    <script src="Assets1/vendor/vanilla-tilt/tilt.jquery.js"></script>
-   <script src="Assets1/js/plugins.js"></script>
-   <script src="Assets1/js/main.js"></script>
+   <script src="Assets1/js/plugins.js?v=3"></script>
+   <script src="Assets1/js/main.js?v=2"></script>
 
    <!-- Custom Portfolio Interactive Scripts -->
    <script>
@@ -2706,14 +2710,19 @@
                });
             });
 
-            // Lazy images change page height as they load; re-measure scroll animations
-            var stRefreshTimer;
-            $("img[loading='lazy']").on("load", function() {
-               clearTimeout(stRefreshTimer);
-               stRefreshTimer = setTimeout(function() {
-                  if (window.ScrollTrigger) { ScrollTrigger.refresh(); }
-               }, 200);
-            });
+            // Lazy images can change page height as they load. Re-measure scroll
+            // animations, but only once scrolling has stopped, so the page never
+            // jumps under the visitor's finger/mouse.
+            var stRefreshPending = false;
+            $("img[loading='lazy']").on("load", function() { stRefreshPending = true; });
+            if (window.ScrollTrigger) {
+               ScrollTrigger.addEventListener("scrollEnd", function() {
+                  if (stRefreshPending) {
+                     stRefreshPending = false;
+                     ScrollTrigger.refresh();
+                  }
+               });
+            }
 
             // Reset Form to send another inquiry
             $("#resetFormBtn").on("click", function() {
@@ -2724,16 +2733,7 @@
                });
             });
 
-            // Smooth Scroll for Navlinks
-            $('a[href^="#"]').on("click", function(e) {
-               var target = $(this.getAttribute("href"));
-               if (target.length) {
-                  e.preventDefault();
-                  $("html, body").stop().animate({
-                     scrollTop: target.offset().top - 80
-                  }, 600);
-               }
-            });
+            // In-page link scrolling is handled once, in Assets1/js/plugins.js
          });
       })(jQuery);
    </script>

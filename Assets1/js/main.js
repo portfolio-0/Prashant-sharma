@@ -364,11 +364,12 @@
 			});
 			$(".progress-wrap").on("click", function(event) {
 				event.preventDefault();
-				$("html, body").animate({
-						scrollTop: 0,
-					},
-					duration
-				);
+				var smoother = window.ScrollSmoother && ScrollSmoother.get();
+				if (smoother) {
+					smoother.scrollTo(0, true);
+				} else {
+					gsap.to(window, { scrollTo: { y: 0, autoKill: true }, duration: duration / 1000, ease: "power3.inOut" });
+				}
 				return false;
 			});
 		}
