@@ -686,11 +686,14 @@
 				});
 			}
 		});
-// 24. smooth scroll
-		if (device_width > 576) {
-			const smoother = ScrollSmoother.create({
+// 24. smooth scroll — turned off: it hijacks the wheel/trackpad and made
+		// scrolling feel delayed and interrupted. Native browser scrolling is used
+		// on every device. To bring it back, set ENABLE_SMOOTH_SCROLL to true.
+		var ENABLE_SMOOTH_SCROLL = false;
+		if (ENABLE_SMOOTH_SCROLL && device_width > 576) {
+			ScrollSmoother.create({
 			  smooth: 1.1,
-			  effects: device_width < 992 ? false : true,
+			  effects: false,
 			  smoothTouch: false,
 			  normalizeScroll: false,
 			  ignoreMobileResize: true,
@@ -855,22 +858,23 @@
 					fadeItems.each(function(index, element) {
 						var delay = index * 0;
 
+						// Subtle reveal: short fade-up, no shrinking, so content
+						// is already in place by the time it is read.
 						gsap.set(element, {
 							opacity: 0,
-							y: 100,
-							scale: 0.8
+							y: 30
 						});
 
 						ScrollTrigger.create({
 							trigger: element,
-							start: "top 100%",
+							start: "top 95%",
 							end: "bottom 20%",
 							onEnter: function() {
 								gsap.to(element, {
 									opacity: 1,
 									y: 0,
-									scale: 1,
-									duration: 1,
+									duration: 0.6,
+									ease: "power2.out",
 									delay: delay,
 								});
 							},
