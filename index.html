@@ -423,6 +423,14 @@
          margin-left: 2px;
          font-weight: bold;
       }
+      .contact-main__form .form-label .opt {
+         margin-left: 6px;
+         font-size: 11px;
+         font-weight: 400;
+         letter-spacing: 0;
+         text-transform: none;
+         color: #7d7d88;
+      }
       .contact-main__form .group-input select option {
          background: #111114;
          color: #fff;
@@ -2194,61 +2202,38 @@
                                  <input type="checkbox" name="botcheck" id="contactBotcheck" class="d-none" tabindex="-1" autocomplete="off">
 
                                  <div class="group-input">
-                                    <label for="contactName" class="form-label"><i class="fa-solid fa-user me-1 text-primary"></i> Full Name <span class="req">*</span></label>
+                                    <label for="contactName" class="form-label">Full Name <span class="req">*</span></label>
                                     <input type="text" name="name" id="contactName" placeholder="e.g. Anurag Sharma" autocomplete="name" required>
                                  </div>
 
                                  <div class="group-wrapper">
                                     <div class="group-input">
-                                       <label for="contactWhatsApp" class="form-label"><i class="fa-brands fa-whatsapp me-1 text-success"></i> WhatsApp Number <span class="req">*</span></label>
+                                       <label for="contactWhatsApp" class="form-label">WhatsApp Number <span class="req">*</span></label>
                                        <input type="tel" name="whatsapp" id="contactWhatsApp" placeholder="e.g. +91 98765 43210" autocomplete="tel" required>
                                     </div>
                                     <div class="group-input">
-                                       <label for="contactEmail" class="form-label"><i class="fa-solid fa-envelope me-1 text-primary"></i> Email Address <span class="req">*</span></label>
-                                       <input type="email" name="email" id="contactEmail" placeholder="e.g. anurag@studio.com" autocomplete="email" required>
+                                       <label for="contactEmail" class="form-label">Email <span class="opt">optional</span></label>
+                                       <input type="email" name="email" id="contactEmail" placeholder="e.g. anurag@studio.com" autocomplete="email">
                                     </div>
                                  </div>
 
                                  <div class="group-wrapper">
                                     <div class="group-input">
-                                       <label for="contactCompany" class="form-label"><i class="fa-solid fa-crown me-1 text-primary"></i> Brand / Company</label>
-                                       <input type="text" name="company" id="contactCompany" placeholder="e.g. Happiness Movement" autocomplete="organization">
-                                    </div>
-                                    <div class="group-input">
-                                       <label for="contactCity" class="form-label"><i class="fa-solid fa-clapperboard me-1 text-primary"></i> City / Location</label>
-                                       <input type="text" name="city" id="contactCity" placeholder="e.g. Mumbai, or Remote" autocomplete="address-level2">
-                                    </div>
-                                 </div>
-
-                                 <div class="group-input">
-                                    <label for="contactService" class="form-label"><i class="fa-solid fa-video me-1 text-primary"></i> What do you need? <span class="req">*</span></label>
-                                    <select name="service" id="contactService" required>
-                                       <option value="" selected disabled>Select a service</option>
-                                       <option>Podcast — Multicam Shoot + Edit</option>
-                                       <option>Podcast — Editing Only</option>
-                                       <option>Short-form Reels / Shorts</option>
-                                       <option>Documentary / Cinematic Film</option>
-                                       <option>Commercial / Brand Film</option>
-                                       <option>Event / Retreat Coverage</option>
-                                       <option>Color Grading / Post-Production</option>
-                                       <option>Something else</option>
-                                    </select>
-                                 </div>
-
-                                 <div class="group-wrapper">
-                                    <div class="group-input">
-                                       <label for="contactBudget" class="form-label"><i class="fa-solid fa-bolt me-1 text-primary"></i> Budget Range</label>
-                                       <select name="budget" id="contactBudget">
-                                          <option value="" selected>Not sure yet</option>
-                                          <option>Under ₹25,000</option>
-                                          <option>₹25,000 – ₹75,000</option>
-                                          <option>₹75,000 – ₹2,00,000</option>
-                                          <option>₹2,00,000+</option>
-                                          <option>Monthly retainer</option>
+                                       <label for="contactService" class="form-label">What do you need? <span class="req">*</span></label>
+                                       <select name="service" id="contactService" required>
+                                          <option value="" selected disabled>Select a service</option>
+                                          <option>Podcast — Multicam Shoot + Edit</option>
+                                          <option>Podcast — Editing Only</option>
+                                          <option>Short-form Reels / Shorts</option>
+                                          <option>Documentary / Cinematic Film</option>
+                                          <option>Commercial / Brand Film</option>
+                                          <option>Event / Retreat Coverage</option>
+                                          <option>Color Grading / Post-Production</option>
+                                          <option>Something else</option>
                                        </select>
                                     </div>
                                     <div class="group-input">
-                                       <label for="contactTimeline" class="form-label"><i class="fa-solid fa-circle-info me-1 text-primary"></i> Timeline</label>
+                                       <label for="contactTimeline" class="form-label">Timeline</label>
                                        <select name="timeline" id="contactTimeline">
                                           <option value="" selected>Flexible</option>
                                           <option>Urgent — within 1 week</option>
@@ -2260,8 +2245,8 @@
                                  </div>
 
                                  <div class="group-input">
-                                    <label for="contactMessage" class="form-label"><i class="fa-solid fa-message me-1 text-muted"></i> Project Details <span class="text-muted fw-normal">(Optional)</span></label>
-                                    <textarea name="message" id="contactMessage" rows="3" placeholder="Tell us about your project, deliverables, or share a link to footage / brief..."></textarea>
+                                    <label for="contactMessage" class="form-label">Project Details <span class="opt">optional</span></label>
+                                    <textarea name="message" id="contactMessage" rows="3" placeholder="Tell us about your project, or share a link to footage / brief..."></textarea>
                                  </div>
 
                                  <p id="formErrorText" class="form-error-text" role="alert" aria-live="polite"></p>
@@ -2643,28 +2628,22 @@
                   name: fieldVal("contactName"),
                   whatsapp: fieldVal("contactWhatsApp"),
                   email: fieldVal("contactEmail"),
-                  company: fieldVal("contactCompany"),
-                  city: fieldVal("contactCity"),
                   service: fieldVal("contactService"),
-                  budget: fieldVal("contactBudget") || "Not sure yet",
                   timeline: fieldVal("contactTimeline") || "Flexible",
                   message: fieldVal("contactMessage")
                };
 
                if (!d.name) { return showFormError("Please enter your full name.", $("#contactName")); }
                if (d.whatsapp.replace(/\D/g, "").length < 10) { return showFormError("Please enter a valid WhatsApp number (with country code if outside India).", $("#contactWhatsApp")); }
-               if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email)) { return showFormError("Please enter a valid email address.", $("#contactEmail")); }
+               if (d.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email)) { return showFormError("That email doesn't look right. Fix it or leave it blank.", $("#contactEmail")); }
                if (!d.service) { return showFormError("Please choose the service you need.", $("#contactService")); }
 
                var summary =
                   "Hello Prashant, I'd like to discuss a project.\n\n" +
                   "• Name: " + d.name + "\n" +
                   "• WhatsApp: " + d.whatsapp + "\n" +
-                  "• Email: " + d.email + "\n" +
-                  (d.company ? "• Brand / Company: " + d.company + "\n" : "") +
-                  (d.city ? "• City / Location: " + d.city + "\n" : "") +
+                  (d.email ? "• Email: " + d.email + "\n" : "") +
                   "• Service: " + d.service + "\n" +
-                  "• Budget: " + d.budget + "\n" +
                   "• Timeline: " + d.timeline + "\n" +
                   (d.message ? "• Details: " + d.message : "");
                var waUrl = "https://wa.me/" + PRASHANT_WHATSAPP + "?text=" + encodeURIComponent(summary);
@@ -2676,7 +2655,7 @@
                function showSuccess(viaEmail) {
                   var who = "Thank you, <strong>" + escapeHtml(d.name) + "</strong>! ";
                   var body = viaEmail
-                     ? "Your inquiry has been sent to Prashant. He'll reply on WhatsApp (<strong>" + escapeHtml(d.whatsapp) + "</strong>) or email (<strong>" + escapeHtml(d.email) + "</strong>) within 24 hours."
+                     ? "Your inquiry has been sent to Prashant. He'll reply on WhatsApp (<strong>" + escapeHtml(d.whatsapp) + "</strong>)" + (d.email ? " or email (<strong>" + escapeHtml(d.email) + "</strong>)" : "") + " within 24 hours."
                      : "WhatsApp has opened with your details filled in — just press <strong>Send</strong> so Prashant receives them. If it didn't open, use the button below.";
                   $("#successSummaryText").html(who + body);
                   $("#projectInquiryForm").slideUp(300, function() { $("#formSuccessMessage").fadeIn(300); });
@@ -2697,7 +2676,7 @@
                      access_key: WEB3FORMS_ACCESS_KEY,
                      subject: "New project inquiry: " + d.service + " — " + d.name,
                      from_name: "Dark Studios Portfolio",
-                     replyto: d.email,
+                     replyto: d.email || undefined,
                      botcheck: false
                   }, d))
                }).then(function(r) { return r.json(); }).then(function(res) {
