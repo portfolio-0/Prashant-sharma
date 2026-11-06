@@ -139,6 +139,11 @@
       html {
          scroll-behavior: auto !important;
       }
+      /* Footer blends into the page's black theme; a thin line separates it */
+      .footer {
+         background: #000 !important;
+         border-top: 1px solid #1f1f1f;
+      }
       body > .my-app::before,
       .my-app::before {
          content: "";
@@ -2480,7 +2485,7 @@
             <!-- ==== / main end ==== -->
 
             <!-- ==== footer start (Exact footer markup from reference assets index.html) ==== -->
-            <footer class="footer section pb-0" data-background="images/cta-bg.png">
+            <footer class="footer section pb-0">
                <div class="container">
                   <div class="row gaper">
                      <div class="col-12 col-lg-5 col-xl-6">
