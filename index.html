@@ -145,6 +145,12 @@
          background: transparent !important;
          border-top: 1px solid #1f1f1f;
       }
+      /* Hero and About sections are transparent too, so every section shares
+         the same page background and watermark */
+      .banner,
+      .section.agency {
+         background-color: transparent !important;
+      }
       body > .my-app::before,
       .my-app::before {
          content: "";
@@ -252,12 +258,19 @@
          max-width: 580px;
          margin: 12px auto 0;
       }
-      @media (min-width: 992px) {
+      /* Widen the About text past the grid only where there is room for it;
+         on laptop widths it ran off the right edge of the screen */
+      @media (min-width: 1600px) {
          .agency .agency__content {
             width: calc(100% + 100px);
             max-width: calc(100% + 100px);
             margin-right: -100px;
          }
+      }
+      /* The % label floats above the end of each bar (90–98% across), so keep
+         skill titles clear of it; long titles wrap instead of overlapping */
+      .agency .skill-bar-title p {
+         padding-right: calc(10% + 52px);
       }
       .agency .star {
          width: 120px;
